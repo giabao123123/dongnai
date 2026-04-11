@@ -1,0 +1,4123 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Đồng Nai</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo đồng nai/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <section class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Đồng Nai!</p>
+    </section>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Đồng Nai</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          \
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoidongnai/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+        <script>
+          const audio = document.getElementById("bgMusic");
+          const btn = document.getElementById("toggleBtn");
+          btn.addEventListener("click", () => {
+            if (audio.paused) {
+              audio.play();
+              btn.textContent = "⏸ Tắt nhạc";
+            } else {
+              audio.pause();
+              btn.textContent = "▶ Phát nhạc";
+            }
+          });
+        </script>
+        <aside
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <menu class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoidongnai/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </menu>
+        </aside>
+      </nav>
+    </header>
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      btnRight.addEventListener("click", () => {
+        menuScroll.scrollLeft += step;
+      });
+      btnLeft.addEventListener("click", () => {
+        menuScroll.scrollLeft -= step;
+      });
+    </script>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <p>
+          <strong><mark>Những cư dân sớm nhất</mark></strong>
+        </p>
+        <p>
+          Con người đã cư trú trên vùng đất <mark>Đồng Nai</mark> từ khoảng
+          <u>600–700 nghìn năm trước Công nguyên</u>, với các công cụ ghè đẽo
+          hai mặt thời kỳ đồ đá cũ. Trên địa bàn tỉnh <mark>Bình Phước</mark>,
+          các di tích niên đại <u>100–150 nghìn năm trước</u> cũng được phát
+          hiện. Thời kỳ này, cư dân sống bằng săn bắt và hái lượm. Đến thời kỳ
+          đồ đá mới, họ bắt đầu định cư lâu dài, trồng lúa, nhiều loại cây ăn
+          quả và cây lấy củ, chăn nuôi các loài động vật, đồng thời phát triển
+          nghề thủ công, đặc biệt là chế tác đá và làm gốm. Khoảng hơn
+          <u>4000 năm trước</u>, nền văn hóa Đồng Nai xuất hiện.
+        </p>
+
+        <p>
+          <strong><mark>Nam tiến</mark></strong>
+        </p>
+        <p>
+          Lịch sử <mark>Đồng Nai</mark> gắn với quá trình Nam tiến của Đại Việt.
+          Thời kỳ Trịnh – Nguyễn phân tranh, làn sóng di dân từ Bắc vào Nam, đặc
+          biệt từ Thuận Quảng, đã đến <mark>Đồng Nai</mark> để tìm đất sinh sống
+          và lập nghiệp. Năm <u>1621</u>, Chúa Sãi (Nguyễn Phúc Nguyên) xin vua
+          Chân Lạp cho người Việt vào Đồng Nai sinh sống, buôn bán và khai khẩn
+          đất canh tác. Năm <u>1679</u>, Tổng binh Trần Thượng Xuyên cùng
+          <u>3.000 binh lính</u> và gia quyến sang Thuận Hóa xin thuần phục Chúa
+          Nguyễn Phúc Tần, được thu nhận và lập nên thương cảng sầm uất tại Cù
+          Lao Phố.
+        </p>
+
+        <p>
+          Năm <u>1698 (Mậu Dần)</u>, Nguyễn Hữu Cảnh lập phủ Gia Định, chia
+          thành hai huyện: Phước Long (dinh Trấn Biên) và Tân Bình (dinh Phiên
+          Trấn), lập bộ đinh, bộ điền, chiêu mộ dân lập nghiệp và phát triển
+          kinh tế.
+        </p>
+
+        <p>
+          <strong><mark>Thời kỳ triều Nguyễn</mark></strong>
+        </p>
+        <p>
+          Năm <u>1802</u>, dinh Trấn Biên được đổi thành trấn Biên Hòa, thuộc
+          phủ Gia Định. Năm <u>1808</u>, trấn Biên Hòa thuộc thành Gia Định, đặt
+          Phước Long thành phủ và lập các tổng Phước Chính, Phước An, Bình An,
+          Long Thành làm huyện. Năm <u>1836</u>, trấn Biên Hòa đổi thành tỉnh
+          Biên Hòa, năm <u>1837</u> lập thêm phủ Phước Tuy và các huyện Nghĩa
+          An, Long Khánh, Phước Bình.
+        </p>
+
+        <p>
+          <strong><mark>Thời Pháp thuộc</mark></strong>
+        </p>
+        <p>
+          Năm <u>1840</u>, Pháp lập thêm bốn phủ: Tân Định, Tân Bình, Tân Lợi,
+          Tân Thuận. Năm <u>1851</u>, vua Tự Đức nhập hai huyện Phước Bình và
+          Long Khánh vào các phủ Phước Long và Phước Tuy. Năm <u>1882</u>, sau
+          Hòa ước Nhâm Tuất, triều Nguyễn cắt đất giao 3 tỉnh Gia Định, Định
+          Tường và Biên Hòa cho Pháp. Pháp chia Biên Hòa thành ba tỉnh: Biên
+          Hòa, Thủ Dầu Một, Bà Rịa. Thời Việt Nam Cộng hòa, Đồng Nai được chia
+          làm 3 tỉnh: Biên Hòa, Long Khánh, Phước Tuy.
+        </p>
+
+        <p>
+          <strong><mark>Sau thống nhất</mark></strong>
+        </p>
+        <p>
+          Đầu năm <u>1975</u>, hợp nhất 3 tỉnh thành lập tỉnh Đồng Nai, tỉnh lỵ
+          đặt tại thị xã Biên Hòa. Năm <u>1976</u>, Biên Hòa trở thành thành phố
+          loại 3, tỉnh có thành phố Biên Hòa, thị xã Vũng Tàu và 9 huyện:
+          <u>Châu Thành</u>, <u>Duyên Hải</u>, <u>Long Đất</u>,
+          <u>Long Thành</u>, <u>Tân Phú</u>, <u>Thống Nhất</u>, <u>Vĩnh Cửu</u>,
+          <u>Xuân Lộc</u>, <u>Xuyên Mộc</u>.
+        </p>
+
+        <p>
+          Các năm sau, địa giới hành chính Đồng Nai nhiều lần thay đổi:
+          <u>23/12/1978</u> sáp nhập Hố Nai 1 và 2 vào Biên Hòa;
+          <u>29/12/1978</u> chuyển Duyên Hải về TP. HCM; <u>30/5/1979</u> thành
+          lập đặc khu Vũng Tàu – Côn Đảo; <u>23/12/1985</u> huyện Vĩnh Cửu thành
+          thị xã Vĩnh An; <u>10/4/1991</u> thành lập huyện Long Khánh từ Xuân
+          Lộc và huyện Định Quán từ Tân Phú; <u>12/8/1991</u> tách 3 huyện Châu
+          Thành, Long Đất, Xuyên Mộc sáp nhập vào Bà Rịa – Vũng Tàu, Đồng Nai
+          còn 1 thành phố, 1 thị xã, 6 huyện; <u>1993</u> Biên Hòa đô thị loại
+          II; <u>23/6/1994</u> lập huyện Nhơn Trạch từ Long Thành;
+          <u>29/8/1994</u> giải thể thị xã Vĩnh An, tái lập huyện Vĩnh Cửu;
+          <u>21/8/2003</u> giải thể huyện Long Khánh để lập thị xã Long Khánh và
+          huyện Cẩm Mỹ, đồng thời lập huyện Trảng Bom từ Thống Nhất;
+          <u>30/12/2015</u> Biên Hòa đô thị loại I; <u>1/6/2019</u> Long Khánh
+          thành thành phố, tỉnh có 2 thành phố, 9 huyện.
+        </p>
+
+        <p>
+          Ngày <u>12/6/2025</u>, Quốc hội sáp nhập tỉnh
+          <mark>Bình Phước</mark> vào <mark>Đồng Nai</mark>, toàn tỉnh có diện
+          tích <u>12.737,18 km²</u> và dân số <u>4.491.408 người</u>.
+        </p>
+
+        <figure class="w3-center">
+          <img
+            src="https://statics.vinpearl.com/dong-nai-vietnam-1_1693286505.jpg"
+            class="w3-container"
+            alt=""
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://vinpearl.com/en/dong-nai-vietnam-useful-information-for-your-trip"
+              target="_blank"
+              >vinpearl.com</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <p>
+          -Tỉnh Đồng Nai nằm trong vùng kinh tế trọng điểm Nam bộ. Đồng Nai có
+          tọa độ từ 10o30'03B đến 11o34'57B và từ 106o45'30Đ đến 107o35'00"Đ
+        </p>
+        <p>
+          -Tỉnh được xem là một cửa ngõ đi vào vùng kinh tế trọng điểm Nam bộ -
+          vùng kinh tế phát triển và năng động nhất cả nước. Đồng thời, Đồng Nai
+          là một trong 4 góc nhọn của Tứ giác phát triển Thành phố Hồ Chí Minh
+          nay gồm (Bình Dương - Bà Rịa – Vũng Tàu) - Đồng Nai. Dân cư tập trung
+          phần lớn ở Biên Hòa với hơn 1 triệu dân và ở 2 huyện Trảng Bom, Long
+          Thành.
+        </p>
+        <p>
+          -Trung tâm hành chính của tỉnh là thành phố Biên Hòa, cách trung tâm
+          Thành phố Hồ Chí Minh khoảng 30 km, cách trung tâm thủ đô Hà Nội
+          khoảng 1684 km theo đường Quốc lộ 1. Đây là thành phố trực thuộc tỉnh
+          có dân số đông nhất cả nước, với quy mô dân số tương đương với 2 thành
+          phố trực thuộc trung ương là Đà Nẵng và Cần Thơ.
+        </p>
+
+        <p><strong>Điểm cực của tỉnh:</strong></p>
+        <ul>
+          <li>
+            Điểm cực bắc: khu vực giáp tỉnh Bình Dương, thuộc huyện Vĩnh Cửu
+            (nay thuộc Đồng Nai sau sáp nhập), khoảng <u>11°27′B, 107°08′Đ</u>
+          </li>
+          <li>
+            Điểm cực đông: khu vực Vườn quốc gia Cát Tiên, giáp tỉnh Bình Thuận,
+            khoảng <u>11°32′B, 107°34′Đ</u>
+          </li>
+          <li>
+            Điểm cực tây: khu vực giáp Thành phố Hồ Chí Minh, thuộc huyện Nhơn
+            Trạch, khoảng <u>10°45′B, 106°45′Đ</u>
+          </li>
+          <li>
+            Điểm cực nam: khu vực giáp tỉnh Bà Rịa – Vũng Tàu, thuộc huyện Long
+            Thành, khoảng <u>10°32′B, 107°00′Đ</u>
+          </li>
+        </ul>
+
+        <p>
+          Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+          liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính tỉnh
+          Đồng Nai sau sáp nhập (2025) và dữ liệu bản đồ số.
+        </p>
+
+        <p><strong>Tiếp giáp:</strong></p>
+        <ul>
+          <li>Phía đông giáp tỉnh Lâm Đồng</li>
+          <li>Phía tây giáp Thành phố Hồ Chí Minh và tỉnh Tây Ninh</li>
+          <li>Phía nam giáp Thành phố Hồ Chí Minh</li>
+          <li>
+            Phía bắc giáp các tỉnh Tbong Khmum, Kratié và Mondulkiri của
+            Campuchia.
+          </li>
+        </ul>
+
+        <p style="font-size: 15px">
+          Nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+            target="_blank"
+            >Wikipedia – Đồng Nai</a
+          >
+        </p>
+
+        <figure class="w3-center">
+          <img
+            src="https://static.chotot.com/storage/chotot-kinhnghiem/nha/2025/08/925938f9-ban-do-tinh-dong-nai-sau-sap-nhap.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Đồng Nai"
+            style="width: 75%"
+          />
+          <span class="text-overlay"></span>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://www.nhatot.com/khu-vuc-phuong-tam-phuoc-dong-nai-sd6a0e"
+              target="_blank"
+              >nhatot.com</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            <strong><mark>Địa hình tỉnh Đồng Nai</mark></strong>
+          </p>
+          <p>
+            Tỉnh Đồng Nai có địa hình vùng đồng bằng và trung du với những núi
+            sót rải rác, có xu hướng thấp dần theo hướng bắc – nam, với địa hình
+            tương đối bằng phẳng. Địa hình có thể chia làm các dạng: địa hình
+            đồng bằng, địa hình trũng trên trầm tích đầm lầy biển, địa đồi lượn
+            sóng, dạng địa hình núi thấp, đất phù sa, đất gley và đất cát có địa
+            hình bằng phẳng, nhiều nơi trũng ngập nước quanh năm. Đất đen, nâu,
+            xám hầu hết có độ dốc nhỏ hơn <u>8°</u>, đất đỏ hầu hết nhỏ hơn
+            <u>15°</u>. Riêng đất tầng mỏng và đá bọt có độ dốc cao. Tỉnh Đồng
+            Nai có quỹ đất phong phú và phì nhiêu. Có <u>10 nhóm đất</u> chính,
+            tuy nhiên theo nguồn gốc và chất lượng đất có thể chia thành 3 nhóm
+            chung gồm: các loại đất hình thành trên đá bazan, các loại đất hình
+            thành trên phù sa cổ và trên đá phiến sét, các loại đất hình thành
+            trên phù sa mới. Trong tổng diện tích tự nhiên, diện tích đất nông
+            nghiệp chiếm <u>49,1%</u>, diện tích đất lâm nghiệp chiếm
+            <u>30,4%</u>, diện tích đất chuyên dùng chiếm <u>13%</u>, diện tích
+            đất khu dân cư chiếm <u>2,1%</u>, diện tích đất chưa sử dụng chiếm
+            <u>5,4%</u>.
+          </p>
+
+          <p>
+            <strong><mark>Rừng và tài nguyên thiên nhiên</mark></strong>
+          </p>
+          <p>
+            Rừng Đồng Nai có đặc trưng cơ bản của rừng nhiệt đới, với tài nguyên
+            động, thực vật phong phú, đa dạng, tiêu biểu là
+            <mark>Vườn quốc gia Nam Cát Tiên</mark>. Tài nguyên khoáng sản khá
+            phong phú về chủng loại như kim loại quý, kim loại màu, đá quý,
+            nguyên liệu gốm sứ, vật liệu xây dựng, phụ gia xi măng, than bùn,
+            nước khoáng và nước nóng.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+            >wiki-Đồng Nai</a
+          >
+          )
+        </p>
+      </section>
+
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 style="font-size: 50px">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <p>
+            Khí hậu Đồng Nai là khí hậu nhiệt đới gió mùa, có hai mùa tương phản
+            nhau là mùa khô và mùa mưa. Mùa khô thường bắt đầu từ tháng
+            <u>12</u> đến tháng <u>4</u> năm sau, mùa mưa kéo dài từ tháng
+            <u>5</u> đến tháng <u>11</u>. Khoảng kết thúc mùa mưa dao động từ
+            đầu tháng <u>10</u> đến tháng <u>12</u>. Nhiệt độ trung bình năm
+            <u>25 – 27 °C</u>, nhiệt độ cao cực trị khoảng <u>40 °C</u> và thấp
+            cực trị <u>12,5 °C</u>, số giờ nắng trong năm
+            <u>2.500 – 2.700 giờ</u>, độ ẩm trung bình luôn cao <u>80 – 82%</u>.
+          </p>
+        </article>
+
+        <table
+          style="
+            width: 100%;
+            border-color: rgb(162, 169, 177);
+            background-color: rgb(234, 236, 240);
+          "
+        >
+          <tbody>
+            <tr>
+              <th colspan="14" style="font-size: 25px">
+                Dữ liệu khí hậu của Đồng Nai
+              </th>
+            </tr>
+            <tr>
+              <th scope="row">Tháng</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th>Năm</th>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">Cao kỉ lục °C (°F)</th>
+              <td style="background: #ff3e00; color: #000000">
+                36.0<br />(96.8)
+              </td>
+              <td style="background: #ff3400; color: #000000">
+                36.5<br />(97.7)
+              </td>
+              <td style="background: #ff2500; color: #000000">
+                37.0<br />(98.6)
+              </td>
+              <td style="background: #ff1400; color: #ffffff">
+                38.0<br />(100.4)
+              </td>
+              <td style="background: #ff1300; color: #ffffff">
+                38.5<br />(101.3)
+              </td>
+              <td style="background: #ff1800; color: #ffffff">
+                37.8<br />(100.0)
+              </td>
+              <td style="background: #ff2500; color: #000000">
+                37.0<br />(98.6)
+              </td>
+              <td style="background: #ff2b00; color: #000000">
+                36.5<br />(97.7)
+              </td>
+              <td style="background: #ff2c00; color: #000000">
+                36.0<br />(96.8)
+              </td>
+              <td style="background: #ff2900; color: #000000">
+                35.5<br />(95.9)
+              </td>
+              <td style="background: #ff3e00; color: #000000">
+                36.0<br />(96.8)
+              </td>
+              <td style="background: #ff4600; color: #000000">
+                35.0<br />(95.0)
+              </td>
+              <td style="background: #ff1300; color: #ffffff">
+                38.5<br />(101.3)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Trung bình ngày tối đa °C (°F)
+              </th>
+              <td style="background: #ff7a00; color: #000000">
+                31.0<br />(87.8)
+              </td>
+              <td style="background: #ff6b00; color: #000000">
+                31.5<br />(88.7)
+              </td>
+              <td style="background: #ff5500; color: #000000">
+                32.0<br />(89.6)
+              </td>
+              <td style="background: #ff4900; color: #000000">
+                33.0<br />(91.4)
+              </td>
+              <td style="background: #ff4400; color: #000000">
+                33.5<br />(92.3)
+              </td>
+              <td style="background: #ff4800; color: #000000">
+                33.0<br />(91.4)
+              </td>
+              <td style="background: #ff4d00; color: #000000">
+                32.5<br />(90.5)
+              </td>
+              <td style="background: #ff4d00; color: #000000">
+                32.5<br />(90.5)
+              </td>
+              <td style="background: #ff4d00; color: #000000">
+                32.0<br />(89.6)
+              </td>
+              <td style="background: #ff5600; color: #000000">
+                31.5<br />(88.7)
+              </td>
+              <td style="background: #ff6800; color: #000000">
+                31.0<br />(87.8)
+              </td>
+              <td style="background: #ff7b00; color: #000000">
+                30.5<br />(86.9)
+              </td>
+              <td style="background: #ff5900; color: #000000">
+                32.0<br />(89.6)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">Trung bình ngày °C (°F)</th>
+              <td style="background: #ffad5c; color: #000000">
+                25.0<br />(77.0)
+              </td>
+              <td style="background: #ffa144; color: #000000">
+                25.5<br />(77.9)
+              </td>
+              <td style="background: #ff8d1c; color: #000000">
+                26.0<br />(78.8)
+              </td>
+              <td style="background: #ff7a00; color: #000000">
+                27.0<br />(80.6)
+              </td>
+              <td style="background: #ff6e00; color: #000000">
+                27.5<br />(81.5)
+              </td>
+              <td style="background: #ff6a00; color: #000000">
+                27.5<br />(81.5)
+              </td>
+              <td style="background: #ff6c00; color: #000000">
+                27.0<br />(80.6)
+              </td>
+              <td style="background: #ff6e00; color: #000000">
+                26.5<br />(79.7)
+              </td>
+              <td style="background: #ff7300; color: #000000">
+                26.0<br />(78.8)
+              </td>
+              <td style="background: #ff8205; color: #000000">
+                25.5<br />(77.9)
+              </td>
+              <td style="background: #ff9831; color: #000000">
+                25.0<br />(77.0)
+              </td>
+              <td style="background: #ffae5d; color: #000000">
+                24.5<br />(76.1)
+              </td>
+              <td style="background: #ff860d; color: #000000">
+                26.0<br />(78.8)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Tối thiểu trung bình ngày °C (°F)
+              </th>
+              <td style="background: #ffca96; color: #000000">
+                22.0<br />(71.6)
+              </td>
+              <td style="background: #ffc388; color: #000000">
+                22.5<br />(72.5)
+              </td>
+              <td style="background: #ffb367; color: #000000">
+                23.0<br />(73.4)
+              </td>
+              <td style="background: #ff9b37; color: #000000">
+                23.5<br />(74.3)
+              </td>
+              <td style="background: #ff8913; color: #000000">
+                24.0<br />(75.2)
+              </td>
+              <td style="background: #ff7e00; color: #000000">
+                24.5<br />(76.1)
+              </td>
+              <td style="background: #ff7e00; color: #000000">
+                24.5<br />(76.1)
+              </td>
+              <td style="background: #ff8002; color: #000000">
+                24.0<br />(75.2)
+              </td>
+              <td style="background: #ff8913; color: #000000">
+                23.5<br />(74.3)
+              </td>
+              <td style="background: #ff9a35; color: #000000">
+                23.0<br />(73.4)
+              </td>
+              <td style="background: #ffb368; color: #000000">
+                22.5<br />(72.5)
+              </td>
+              <td style="background: #ffcb97; color: #000000">
+                22.0<br />(71.6)
+              </td>
+              <td style="background: #ffa042; color: #000000">
+                23.5<br />(74.3)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">Thấp kỉ lục °C (°F)</th>
+              <td style="background: #dfdfff; color: #000000">
+                18.0<br />(64.4)
+              </td>
+              <td style="background: #fffcfa; color: #000000">
+                19.0<br />(66.2)
+              </td>
+              <td style="background: #fff9f3; color: #000000">
+                19.5<br />(67.1)
+              </td>
+              <td style="background: #ffcf9f; color: #000000">
+                20.0<br />(68.0)
+              </td>
+              <td style="background: #ffb871; color: #000000">
+                21.0<br />(69.8)
+              </td>
+              <td style="background: #ffa64d; color: #000000">
+                22.0<br />(71.6)
+              </td>
+              <td style="background: #ff9d3b; color: #000000">
+                22.5<br />(72.5)
+              </td>
+              <td style="background: #ffd4a9; color: #000000">
+                22.0<br />(71.6)
+              </td>
+              <td style="background: #ffb66e; color: #000000">
+                21.5<br />(70.7)
+              </td>
+              <td style="background: #ffe8d2; color: #000000">
+                20.5<br />(68.9)
+              </td>
+              <td style="background: #fcfcff; color: #000000">
+                19.5<br />(67.1)
+              </td>
+              <td style="background: #e8e8ff; color: #000000">
+                18.5<br />(65.3)
+              </td>
+              <td style="background: #dfdfff; color: #000000">
+                18.0<br />(64.4)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Lượng Giáng thủy trung bình mm (inches)
+              </th>
+              <td style="background: #dfffdf; color: #000000">10<br />(0.4)</td>
+              <td style="background: #ccffcc; color: #000000">15<br />(0.6)</td>
+              <td style="background: #adffad; color: #000000">30<br />(1.2)</td>
+              <td style="background: #54ff54; color: #000000">80<br />(3.1)</td>
+              <td style="background: #00e700; color: #000000">
+                150<br />(5.9)
+              </td>
+              <td style="background: #005800; color: #ffffff">
+                200<br />(7.9)
+              </td>
+              <td style="background: #003000; color: #ffffff">
+                250<br />(9.8)
+              </td>
+              <td style="background: #003000; color: #ffffff">
+                250<br />(9.8)
+              </td>
+              <td style="background: #16ff16; color: #000000">
+                180<br />(7.1)
+              </td>
+              <td style="background: #9eff9e; color: #000000">
+                100<br />(3.9)
+              </td>
+              <td style="background: #cfffcf; color: #000000">50<br />(2.0)</td>
+              <td style="background: #dfffdf; color: #000000">20<br />(0.8)</td>
+              <td style="background: #38ff38; color: #000000">
+                1.435<br />(56.5)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Số ngày giáng thủy trung bình
+              </th>
+              <td style="background: #c3c3ff; color: #000000">2.0</td>
+              <td style="background: #c8c8ff; color: #000000">2.5</td>
+              <td style="background: #b7b7ff; color: #000000">4.0</td>
+              <td style="background: #6060ff; color: #ffffff">8.0</td>
+              <td style="background: #2c2cff; color: #ffffff">12.0</td>
+              <td style="background: #0000fb; color: #ffffff">15.0</td>
+              <td style="background: #0000e9; color: #ffffff">17.0</td>
+              <td style="background: #0000f7; color: #ffffff">16.0</td>
+              <td style="background: #5454ff; color: #ffffff">12.0</td>
+              <td style="background: #9393ff; color: #000000">8.0</td>
+              <td style="background: #b8b8ff; color: #000000">5.0</td>
+              <td style="background: #d1d1ff; color: #000000">3.0</td>
+              <td style="background: #6d6dff; color: #000000">112.5</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Độ ẩm tương đối trung bình (%)
+              </th>
+              <td style="background: #0000c1; color: #ffffff">79</td>
+              <td style="background: #0000cd; color: #ffffff">78</td>
+              <td style="background: #0000cf; color: #ffffff">78</td>
+              <td style="background: #0000c8; color: #ffffff">80</td>
+              <td style="background: #0000c4; color: #ffffff">81</td>
+              <td style="background: #0000ba; color: #ffffff">82</td>
+              <td style="background: #0000b3; color: #ffffff">83</td>
+              <td style="background: #0000af; color: #ffffff">83</td>
+              <td style="background: #0000b3; color: #ffffff">83</td>
+              <td style="background: #0000b9; color: #ffffff">82</td>
+              <td style="background: #0000be; color: #ffffff">81</td>
+              <td style="background: #0000be; color: #ffffff">80</td>
+              <td style="background: #0000be; color: #ffffff">81</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row" style="height: 16px">
+                Số giờ nắng trung bình tháng
+              </th>
+              <td style="background: #c9c900; color: #000000">180</td>
+              <td style="background: #d5d500; color: #000000">190</td>
+              <td style="background: #d8d800; color: #000000">210</td>
+              <td style="background: #dada00; color: #000000">220</td>
+              <td style="background: #d8d800; color: #000000">230</td>
+              <td style="background: #c2c216; color: #000000">200</td>
+              <td style="background: #bbbb41; color: #000000">180</td>
+              <td style="background: #c2c218; color: #000000">180</td>
+              <td style="background: #d0d000; color: #000000">210</td>
+              <td style="background: #cece00; color: #000000">220</td>
+              <td style="background: #caca00; color: #000000">210</td>
+              <td style="background: #c9c900; color: #000000">200</td>
+              <td style="background: #cece00; color: #000000">2.460</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong><mark>LƯU Ý:</mark></strong
+          ><em
+            >Dữ liệu trong bảng được ước lượng dựa trên số liệu khí hậu trung
+            bình theo tháng từ các trang khí hậu uy tín như WeatherSpark,
+            Climate-data.org và Timeanddate.com, tổng hợp từ số liệu quan trắc
+            nhiều năm.</em
+          >
+        </p>
+        <p style="font-size: 15px">
+          (Nguồn:
+          <a
+            href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+            target="_blank"
+            >wiki-Đồng Nai</a
+          >)
+        </p>
+      </section>
+
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Huyện Phú Riềng",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phu-rieng?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Lộc Ninh",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/loc-ninh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hớn Quản",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/hon-quan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Đồng Phú",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bù Gia Mập",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-gia-map?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bù Đốp",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dop?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bù Đăng",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Phước Long",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phuoc-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Chơn Thành",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/chon-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "thị xã Bình Long",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/binh-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Đồng Xoài",
+              parent: "Tỉnh Bình Phước cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-xoai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+
+            {
+              name: "Thành phố Biên Hòa",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/bien-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Thành phố Long Khánh",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-khanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tân Phú",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/tan-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Vĩnh Cửu",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/vinh-cuu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Định Quán",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/dinh-quan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Trảng Bom",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/trang-bom?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thống Nhất",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/thong-nhat?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Cẩm Mỹ",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/cam-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Long Thành",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Xuân Lộc",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/xuan-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nhơn Trạch",
+              parent: "Tỉnh Đồng Nai cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/nhon-trach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <section>
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr style="background: #f0f0f0">
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td><u>2.220.500</u></td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>2005</td>
+                <td><u>2.263.800</u></td>
+                <td>+1,95%</td>
+              </tr>
+              <tr>
+                <td>2006</td>
+                <td><u>2.314.900</u></td>
+                <td>+2,26%</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td><u>2.372.600</u></td>
+                <td>+2,49%</td>
+              </tr>
+              <tr>
+                <td>2008</td>
+                <td><u>2.432.700</u></td>
+                <td>+2,53%</td>
+              </tr>
+              <tr>
+                <td>2009</td>
+                <td><u>2.499.700</u></td>
+                <td>+2,75%</td>
+              </tr>
+              <tr>
+                <td>2010</td>
+                <td><u>2.575.100</u></td>
+                <td>+3,02%</td>
+              </tr>
+              <tr>
+                <td>2011</td>
+                <td><u>2.665.100</u></td>
+                <td>+3,49%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td><u>2.720.800</u></td>
+                <td>+2,09%</td>
+              </tr>
+              <tr>
+                <td>2013</td>
+                <td><u>2.771.420</u></td>
+                <td>+1,86%</td>
+              </tr>
+              <tr>
+                <td>2014</td>
+                <td><u>2.768.700</u></td>
+                <td>-0,10%</td>
+              </tr>
+              <tr>
+                <td>2015</td>
+                <td><u>2.890.000</u></td>
+                <td>+4,38%</td>
+              </tr>
+              <tr>
+                <td>2016</td>
+                <td><u>2.963.800</u></td>
+                <td>+2,55%</td>
+              </tr>
+              <tr>
+                <td>2017</td>
+                <td><u>3.010.790</u></td>
+                <td>+1,59%</td>
+              </tr>
+              <tr>
+                <td>2018</td>
+                <td><u>3.086.100</u></td>
+                <td>+2,50%</td>
+              </tr>
+              <tr>
+                <td>2019</td>
+                <td><u>3.097.107</u></td>
+                <td>+0,36%</td>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td><u>3.177.400</u></td>
+                <td>+2,59%</td>
+              </tr>
+              <tr>
+                <td>2021</td>
+                <td><u>3.169.100</u></td>
+                <td>-0,26%</td>
+              </tr>
+              <tr>
+                <td>2022</td>
+                <td><u>3.255.810</u></td>
+                <td>+2,74%</td>
+              </tr>
+            </table>
+
+            <p>
+              <mark><strong>Dân số và cơ cấu dân cư tỉnh Đồng Nai</strong></mark
+              >: Tính đến năm <u>2019</u>, dân số toàn tỉnh Đồng Nai đạt
+              <u>3.097.107</u> người, mật độ dân số đạt <u>516,3</u> người/km²,
+              trong đó dân số thành thị chiếm <u>48,4%</u> và dân số nông thôn
+              chiếm <u>51,6%</u>. Đồng Nai là tỉnh đông dân nhất vùng Đông Nam
+              Bộ (không tính Thành phố Hồ Chí Minh), với hơn <u>3</u> triệu dân;
+              là tỉnh có dân số đông thứ nhì ở miền Nam (sau Thành phố Hồ Chí
+              Minh), đứng thứ <u>5</u> cả nước (sau Thành phố Hồ Chí Minh, Hà
+              Nội, Thanh Hóa và Nghệ An), và có quy mô dân số đô thị đứng thứ
+              <u>4</u> cả nước (sau Thành phố Hồ Chí Minh, Hà Nội và Bình
+              Dương).
+            </p>
+            <p>
+              Về diện tích, Đồng Nai là tỉnh có diện tích lớn thứ <u>2</u> ở
+              Đông Nam Bộ (sau Bình Phước) và thứ <u>3</u> ở miền Nam (sau Bình
+              Phước và Kiên Giang). Theo thống kê của Tổng cục Thống kê Việt
+              Nam, tính đến ngày <u>1</u> tháng <u>4</u> năm <u>2009</u>, toàn
+              tỉnh có <u>51</u> dân tộc cùng người nước ngoài sinh sống, trong
+              đó người Kinh có <u>2.311.315</u> người, người Hoa có
+              <u>95.162</u> người, người Nùng có <u>19.076</u> người, người Tày
+              có <u>15.906</u> người, người Khmer có <u>7.059</u> người, còn lại
+              là các dân tộc khác như Mường, Dao, Chăm, Thái…; ít nhất là người
+              Si La và Ơ Đu chỉ có <u>1</u> người. Tỷ lệ đô thị hóa của tỉnh
+              tính đến năm <u>2022</u> đạt trên <u>45%</u>.
+            </p>
+            <p>
+              Theo dữ liệu Sáp nhập tỉnh, thành Việt Nam 2025, Đồng Nai có diện
+              tích: 12.737 km², xếp thứ 9; dân số: 4.491.408 người, xếp thứ 5;
+            </p>
+            <p style="font-size: 15px">
+              (Nguồn thông tin:
+              <a
+                href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+                target="_blank"
+                >Wikipedia – Đồng Nai</a
+              >)
+            </p>
+          </section>
+        </article>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            <strong
+              ><mark>Văn hóa và nghề truyền thống của Đồng Nai</mark></strong
+            ><br />Đồng Nai nổi tiếng với nghề <u>gốm sứ truyền thống</u>, có
+            phương pháp tạo hoa văn đặc trưng kết hợp
+            <u>khắc nét chìm và trổ thủng</u>, quét men, khác với gốm sứ miền
+            Bắc và miền Trung. Ngoài gốm sứ, tỉnh còn có nhiều nghề thủ công
+            truyền thống như <u>đan lát, mây tre lá</u>, cùng các làng nghề như
+            <u>bánh đa, hủ tíu, gò thùng thiếc làng Kim Bích</u>. Đồng Nai cũng
+            phát triển các ngành nghề truyền thống khác như
+            <u
+              >gia công đồ mỹ nghệ, chế biến nông sản, sản xuất gạch ngói, đúc
+              đồng, đúc gang, làm sản phẩm gỗ công nghệ</u
+            >. Tỉnh chú trọng bảo vệ và phát triển nghề truyền thống thông qua
+            việc <u>thành lập cụm công nghiệp nghề truyền thống</u> và
+            <u>mở các lớp đào tạo nghề</u>, nhằm giữ gìn bản sắc văn hóa trong
+            bối cảnh đô thị hóa và hội nhập kinh tế.
+          </p>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Điện Biên:</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark
+                  ><strong>
+                    Lễ hội Kỳ Yên - Một trong những lễ hội quan trọng và nổi
+                    tiếng tại tỉnh Đồng Nai</strong
+                  ></mark
+                >
+                <p>Thời gian: <u>tháng 2 đến tháng 4 âm lịch hằng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >các đình làng, đình thờ thành hoàng ở các địa phương trong
+                    tỉnh, tiêu biểu như Đình Tân Lân, Đình Tân Khai, Đình An
+                    Hòa.</u
+                  >
+                </p>
+                <p>
+                  Lễ hội Kỳ Yên là một nét văn hóa tâm linh đặc trưng của người
+                  dân Đồng Nai,được xem là một trong những lễ hội truyền thống
+                  quan trọng nhất tại vùng đất này. Lễ hội thường được tổ chức
+                  vào mùa xuân và mùa thu hoặc gắn liền với các ngày có ý nghĩa
+                  đặc biệt liên quan đến vị thần được thờ phụng. Trong dịp
+                  lễ,người dân cùng nhau chuẩn bị lễ vật để dâng lên vị thành
+                  hoàng của làng,với mong ước cầu cho mưa thuận gió hòa,mùa màng
+                  bội thu,và quê hương thịnh vượng,bình yên.
+                </p>
+                <p>
+                  Trải qua bao thăng trầm,lễ hội Kỳ Yên ngày nay đã trở thành
+                  một tín ngưỡng thiêng liêng,vừa là dịp để gìn giữ truyền thống
+                  văn hóa,vừa là nơi thể hiện lòng thành kính với thần linh và
+                  các bậc tiền nhân đã có công mở mang,xây dựng quê hương. Trong
+                  khuôn khổ lễ hội,những nghi thức cúng tế được tiến hành trang
+                  nghiêm,kết hợp cùng các hoạt động diễn xướng như lễ xây chầu –
+                  đại bội và các tiết mục hát tuồng,tạo nên một không gian văn
+                  hóa đậm nét đặc trưng của người Nam bộ.
+                </p>
+                <p>
+                  Suốt thời gian diễn ra lễ hội,du khách không chỉ có cơ hội
+                  trải nghiệm các nghi thức độc đáo như Túc yết,Đoàn cả,Tế tiền
+                  hiền,Hậu hiền,Thỉnh sắc,Tỉnh sanh,Hồi sắc và Tống ôn,mà còn
+                  được hòa mình vào bầu không khí sôi động của các hoạt động văn
+                  hóa dân gian như hát bộ,múa lân,đua thuyền,và các màn đấu
+                  võ,xô giàn đặc sắc.
+                </p>
+                <img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/uploads/images/17297747340.png"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px">
+                  (nguồn:
+                  <a
+                    href="https://travelviet.net/vn/review-du-lich/dong-nai/hoa-minh-vao-4-le-hoi-truyen-thong-sieu-dac-biet-tai-tinh-dong-nai"
+                    target="_blank"
+                    >travelviet.net</a
+                  >)
+                </p>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Sa-yang-va</strong></mark>
+                <p>Thời gian: <u>tháng 2 – tháng 3 âm lịch hàng năm</u></p>
+                <p>Địa điểm: <u>các buôn, làng của đồng bào S’tiêng</u></p>
+                <p>
+                  Lễ hội Sa-yang-va là một lễ hội truyền thống đặc sắc của người
+                  Châu Ro,diễn ra vào tháng 3 âm lịch tại ấp Ruộng Lớn,xã Bảo
+                  Vinh,thị xã Long Khánh,tỉnh Đồng Nai. Thời điểm này là lúc
+                  người dân vừa thu hoạch lúa xong và chuẩn bị cho mùa gieo
+                  trồng mới,nên lễ hội còn được gọi là lễ mừng lúa mới.Với tầm
+                  quan trọng trong đời sống văn hóa tâm linh của người dân địa
+                  phương,lễ hội Sa-yang-va được chuẩn bị chu đáo từ trước đó cả
+                  tháng. Người dân cùng nhau chuẩn bị lễ vật như dựng cây
+                  nêu,nấu rượu ịt - một loại rượu lên men nhẹ có màu trắng đục
+                  và mùi hương ngai ngái của lá tươi,làm các loại bánh truyền
+                  thống như bánh dày,bánh nếp,cơm lam,và sắp xếp bàn thờ Yang để
+                  cúng tế.
+                </p>
+                <p>
+                  Trong ngày chính lễ,trên bàn thờ sẽ bày biện một mâm lễ gồm
+                  thịt gà,thịt heo,bánh,rượu và các lễ vật khác. Bà Búp,Thầy
+                  Chang,hoặc chủ gia đình sẽ đọc lời thỉnh cầu để mời các vị
+                  Yang và tổ tiên về chứng giám lòng thành,bày tỏ lòng biết ơn
+                  về vụ mùa trước và cầu mong sự phù hộ cho mùa vụ sắp tới. Đồng
+                  thời,người phụ nữ trong gia đình sẽ đeo gùi ra rẫy thực hiện
+                  nghi thức “rước hồn lúa” với hai cây mía,hai cây chuối non và
+                  những bông lúa chín đầy hạt để mang về cúng trong kho lúa.
+                </p>
+                <p>
+                  Lễ hội Sa-yang-va trở nên sống động với âm thanh của đàn cồng
+                  chiêng lúc khoan thai,lúc dồn dập,hòa cùng tiếng kèn lúa và
+                  đàn tre vang vọng khắp nơi. Theo quan niệm của đồng bào Châu
+                  Ro,những âm thanh này sẽ tạo nên không khí vui tươi,giúp các
+                  Yang và tổ tiên hoan hỉ về dự lễ. Phần lễ đã sôi nổi,phần hội
+                  còn nhộn nhịp hơn nữa khi mọi người cùng nhau ca hát,nhảy múa
+                  những điệu múa truyền thống quanh đống lửa,tham gia các trò
+                  chơi dân gian thú vị và thưởng thức những món ăn truyền thống
+                  thơm ngon. Niềm vui của lễ hội kéo dài cho đến nửa đêm,khi bầu
+                  không khí hội hè mới thật sự lắng xuống.
+                </p>
+                <img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/uploads/images/17297747351.png"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px">
+                  (nguồn:
+                  <a
+                    href="https://travelviet.net/vn/review-du-lich/dong-nai/hoa-minh-vao-4-le-hoi-truyen-thong-sieu-dac-biet-tai-tinh-dong-nai"
+                    target="_blank"
+                    >travelviet.net</a
+                  >)
+                </p>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Chùa Ông</strong></mark>
+                <p>Thời gian: <u>ngày 15 tháng 8 âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Chùa Ông, các đình, chùa của cộng đồng người Hoa ở thành
+                    phố Biên Hòa và một số vùng lân cận.</u
+                  >
+                </p>
+                <p>
+                  Trong số các lễ hội truyền thống nổi tiếng tại Đồng Nai,lễ hội
+                  Chùa Ông là sự kiện không thể bỏ qua,thu hút đông đảo du khách
+                  đến chiêm bái và tham gia. Diễn ra từ ngày mùng 10 đến 13
+                  tháng Giêng âm lịch,lễ hội mang đến nhiều hoạt động văn hóa
+                  đặc sắc,bao gồm lễ nghinh các vị thần,khai lễ mở hội,lễ cúng
+                  trời và thả phúc khí cầu,cùng với lễ cầu an và thả hoa đăng
+                  trên dòng sông Đồng Nai.
+                </p>
+                <p>
+                  Phần hội của lễ Chùa Ông không kém phần hấp dẫn với nhiều
+                  chương trình nghệ thuật đặc trưng,chẳng hạn như biểu diễn đờn
+                  ca tài tử Nam Bộ,tuồng cổ,và các màn trình diễn lân – sư –
+                  rồng. Bên cạnh đó,những trò chơi dân gian và các buổi giao lưu
+                  thư pháp cũng thu hút sự quan tâm của nhiều người yêu thích
+                  văn hóa địa phương. Điểm nhấn đặc biệt trong lễ hội là nghi
+                  thức rước thần trang trọng,kết hợp với các hoạt động giải trí
+                  như biểu diễn tạp kỹ,phát bao lì xì cho người tham dự,và những
+                  tiết mục nhạc cổ truyền trên các tuyến phố,tạo nên một không
+                  khí sôi động,ngập tràn niềm vui lễ hội.
+                </p>
+                <img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/uploads/images/17297747352.png"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px">
+                  (nguồn:
+                  <a
+                    href="https://travelviet.net/vn/review-du-lich/dong-nai/hoa-minh-vao-4-le-hoi-truyen-thong-sieu-dac-biet-tai-tinh-dong-nai"
+                    target="_blank"
+                    >travelviet.net</a
+                  >)
+                </p>
+              </li>
+              <li>
+                <mark><strong>Lễ hội Tả Tài Phán</strong></mark>
+                <p>Thời gian: <u>ngày 16 tháng 7 âm lịch hàng năm.</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >các miếu, đình, chùa của người Hoa ở thành phố Biên Hòa và
+                    các vùng lân cận.</u
+                  >
+                </p>
+                <p>
+                  Khi đến Đồng Nai,du khách không thể bỏ qua lễ hội Tài Phán của
+                  cộng đồng người Hoa tại Long Khánh,một sự kiện văn hóa đặc sắc
+                  thu hút sự quan tâm của nhiều người. Lễ Tả Tài Phán,còn được
+                  gọi là Lễ Đại Phan,được tổ chức hàng năm vào tháng Chạp bởi
+                  cộng đồng dân tộc Hẹ (người Hoa). Lễ hội mang đậm tính dung
+                  hợp văn hóa,kết hợp các nghi thức tín ngưỡng,đặc biệt là từ
+                  Đạo giáo,nhằm cầu an và tấn phong cho các thầy cúng ở các cấp
+                  bậc Tài Phán Xí.
+                </p>
+                <p>
+                  Ngoài các nghi thức cầu an,cầu siêu,lễ hội còn hấp dẫn với các
+                  hoạt động nghệ thuật như kịch tuồng,hát bội,đấu thánh đăng,và
+                  lễ nước Ông thần. Tuy nhiên,nổi bật nhất là nghi thức pháp sư
+                  leo thang dao và đi trên than hồng,thu hút đông đảo người dân
+                  đến cầu nguyện phước lành và bình an cho gia đình. Đây là thời
+                  điểm mà bầu không khí lễ hội trở nên náo nhiệt nhất,khi mọi
+                  người đều hướng về những màn biểu diễn ngoạn mục. Không chỉ là
+                  dịp để thực hiện các nghi lễ truyền thống,lễ hội Tả Tài Phán
+                  còn là cơ hội để những người xa quê trở về sum họp,cùng nhau
+                  chia sẻ và thắt chặt tình cảm. Vì thế,nếu có dịp ghé thăm Đồng
+                  Nai,đừng bỏ lỡ cơ hội trải nghiệm lễ hội đặc sắc này.
+                </p>
+                <img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/uploads/images/17297747353.png"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px">
+                  (nguồn:
+                  <a
+                    href="https://travelviet.net/vn/review-du-lich/dong-nai/hoa-minh-vao-4-le-hoi-truyen-thong-sieu-dac-biet-tai-tinh-dong-nai"
+                    target="_blank"
+                    >travelviet.net</a
+                  >)
+                </p>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <p>
+            Sau sáp nhập tỉnh Bình Phước và Đồng Nai, hệ thống di tích lịch sử –
+            văn hóa, danh thắng trên địa bàn <strong>Đồng Nai mới</strong> có
+            <u>120 di tích</u> đã được xếp hạng.
+          </p>
+          <p>
+            Trong đó có <u>7 di tích quốc gia đặc biệt</u>,
+            <u>41 di tích quốc gia</u>, <u>72 di tích cấp tỉnh</u> và gần
+            <u>1,5 ngàn di tích đã được kiểm kê phổ thông</u>.
+          </p>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ul>
+              <li>
+                Di tích lịch sử Nhà Xanh Đồng Nai<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/Wpz5KdDGHSiuscch8"
+                  target="_blank"
+                  >477 Đ. Nguyễn Văn Hoa, Thống Nhất, Biên Hòa, Đồng Nai 76000,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – kiến trúc<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/di-tich-lich-su-nha-xanh-dong-nai-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Di tích Đình An Hoà<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/rJVRXtawo8AKRD3Q9"
+                  target="_blank"
+                  >VVP5+2WW, Ng. Quyền, An Hoà, Biên Hòa, Đồng Nai, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/di-tich-dinh-an-hoa-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Di tích Chùa Đại Giác<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/V2EdXycSmHu12KUL8"
+                  target="_blank"
+                  >WRMH+33C, Đỗ Văn Thi, Hiệp Hoà, Biên Hòa, Đồng Nai,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa - tôn giáo<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/di-tich-chua-dai-giac-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Lăng mộ Trịnh Hoài Đức<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/m3krUHSH7QxDZHZf7"
+                  target="_blank"
+                  >XR3C+FP2, Trung Dũng, Biên Hòa, Đồng Nai, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – kiến trúc<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/lang-mo-trinh-hoai-duc-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Di tích lịch sử Đình Tân Lân<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/xdRgdHHUnUMy9HMG7"
+                  target="_blank"
+                  >WRW6+WPC, Nguyễn Văn Trị, Quang Vinh, Biên Hòa, Đồng Nai,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/di-tich-lich-su-dinh-tan-lan-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Đền thờ Nguyễn Hữu Cảnh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/wFvkt6KH3U8Xr18Y9"
+                  target="_blank"
+                  >Nguyen Huu Canh Temple, Hiệp Hoà, Biên Hòa, Đồng Nai,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/den-tho-nguyen-huu-canh-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Chùa Long Thiền<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/E9ANS6RFrYyK1gv26"
+                  target="_blank"
+                  >3B Đường Bùi Hữu Nghĩa, Hoà An, Biên Hòa, Đồng Nai,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa - tôn giáo<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/chua-long-thien-dongnaitoplist-1.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Nhà hội Bình Tước<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/QnR15hLzksiBYb699"
+                  target="_blank"
+                  >4 Ba Mươi Tháng Tư, Trung Dũng, Biên Hòa, Đồng Nai,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/nha-hoi-binh-tuoc-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Văn miếu Trấn Biên<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/SfHTtLwDYpK2A9th8"
+                  target="_blank"
+                  >XR72+WJ7, Bửu Long, Biên Hòa, Đồng Nai, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa - giáo dục<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/van-mieu-tran-bien-dongnaitoplist-2.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Di tích Địa đạo Suối Linh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/y3pBZ6qUzuDqRGgq5"
+                  target="_blank"
+                  >6WMP+V7P, Trị An, Vĩnh Cửu, Đồng Nai, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://dongnaitoplist.com/wp-content/uploads/2024/06/di-tich-dia-dao-suoi-linh-dongnaitoplist.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://dongnaitoplist.com/top-10-di-tich-lich-su-tai-dong-nai-noi-tieng-ma-ban-nen-den-thu/"
+                    target="_blank"
+                    >dongnaitoplist.com</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Địa điểm Chiến thắng Đồng Xoài<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/GLPRUip2aRYmTX7X8"
+                  target="_blank"
+                  >454 QL14, Tân Phú, Đồng Xoài, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/03ed8b29-7c8e-41db-8b6c-0929c898dc31-dia-diem-chien-thang-dong-xoaijpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Địa điểm chiến thắng Chốt chặn Tàu Ô<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/s86d6Z4c6iqTv7Le9"
+                  target="_blank"
+                  >QL13, Tan Khai, Hớn Quản, Bình Phước 830000, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/c5c31332-a084-41ea-b4d1-f0d7c6a15dea-dia-diem-chien-thang-chot-tau-ojpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Địa điểm thành lập Chi bộ Đông Dương Cộng sản Đảng ở Phú
+                Riềng<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/QA3i4QcPGViGuJE56"
+                  target="_blank"
+                  >Unnamed, Road, Đồng Phú, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/a894edb1-e61a-453c-8a77-703f6d9fd4e4-dia-diem-thanh-lap-chi-bo-dong-duong-cong-san-dang-o-phu-riengjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Núi Bà Rá – Thác Mơ<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/TsonaDmn5ECqgApk6"
+                  target="_blank"
+                  >Phước Long, Binh Phuoc, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích danh thắng – thiên nhiên.<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/cbeaccbc-8578-47d1-a59f-268fb410ccf0-nui-ba-na-thac-mojpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Cuộc nổi dậy của đồng bào S’tiêng – xã Phú Riềng chống thực dân
+                Pháp<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/r8cMmW2yRw9MKxun9"
+                  target="_blank"
+                  >R5QW+75P, Bình Minh, Bù Đăng, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/13420a01-6d5b-499b-8780-76f0ed26a763-cuoc-troi-day-cua-dong-bao-stiengjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Sân bay quân sự Lộc Ninh<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/gkcFq8Vb4xoJSz379"
+                  target="_blank"
+                  >RHPQ+76F, Lộc Ninh, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/4507a6a1-8837-4b87-998f-ed3b8b86122b-san-bay-loc-ninhjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Đình Tân khai<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/d27Fe724kC9PR8pe6"
+                  target="_blank"
+                  >HJ26+VV5, Đường Không Tên, Tan Khai, Hớn Quản, Bình Phước,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/b434abc0-4f6f-4590-af27-faf5cc84db6c-dinh-tan-khaijpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Chùa Sóc Lớn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/HL7uR6RRancGRoPC9"
+                  target="_blank"
+                  >QJMG+8W9, Lộc Khánh, Lộc Ninh, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hóa - tôn giáo<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/112ecb16-4be2-4e7c-8243-0f78c08eabee-chua-soc-lonjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Trụ sở Chính phủ cách mạng lâm thời Cộng hòa miền Nam Việt
+                Nam<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/wsoRxdvC3dTFzADV6"
+                  target="_blank"
+                  >GVJR+4CX, Hùng Vương, Tân Bình, Đồng Xoài, Bình Phước,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/5565c4b0-db5e-41bb-9d30-e2c9d8799aba-tru-so-chinh-phu-cach-mang-lam-thoi-cong-hoa-mien-nam-viet-namjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Mộ 3000 đồng bào An Lộc bị đế quốc Mỹ tàn sát ngày 03/10/1972<br />-Địa
+                điểm:<a
+                  href="https://maps.app.goo.gl/i5usBsgtPQrBjFzEA"
+                  target="_blank"
+                  >JJX4+M8C, Phạm Ngọc Thạch, An Lộc, Bình Long, Bình Phước,
+                  Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/a32c8f5e-6de5-4fb2-a74b-d1f5953f4d2b-mo-3000-dong-bao-an-locjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Căn cứ Tà Thiết<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/khJrzW5Y63Qzm2Kk9"
+                  target="_blank"
+                  >PFXC+4Q8, Lộc Thanh, Lộc Ninh, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/88d682bb-9155-4239-94b3-dbf3cbb2acdf-can-cu-bo-chi-huy-quan-giai-phong-mien-nam-viet-namjpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+              <li>
+                Bồn xăng kho nhiên liệu VK98<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/x3h3YRCAw2rouDhP8"
+                  target="_blank"
+                  >RMGQ+WRF, Lộc Quang, Lộc Ninh, Bình Phước, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – cách mạng<br /><img
+                  src="https://images.travelviet.net/vietnam/s3/s3_amazon/260a986c-15a2-4de0-84a4-a508669d782b-bon-xang-kho-nhien-lieu-vk98jpg.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <p style="font-size: 15px" class="w3-animate-left">
+                  (nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://travelviet.net/vn/news/binh-phuoc/ghe-tham-19-di-tich-lich-su-binh-phuoc-lau-doi-noi-tieng"
+                    target="_blank"
+                    >travelviet.net</a
+                  >
+                  )
+                </p>
+              </li>
+            </ul>
+          </details>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Đờn ca tài tử Nam Bộ <br />- Loại hình: Nghệ thuật trình
+                diễn<br /><img
+                  src="https://tse3.mm.bing.net/th/id/OIP.MwHEHjj-rUK27fhSzMtVpAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://baodongnai.com.vn/dong-nai-cuoi-tuan/202006/trao-truyen-di-san-don-ca-tai-tu-nam-bo-3008057/"
+                  target="_blank"
+                  >baodongnai.com.vn</a
+                >)
+              </li>
+              <li>
+                -Lễ hội chùa Ông<br />- Loại hình: lễ hội truyền thống<br /><img
+                  src="https://vnanet.vn/Data/Articles/2024/02/19/7232281/vna_potal_van_hoa_soi_duong_le_hoi_chua_ong_o_bien_hoa_dong_nai__stand.jpg"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://vnanet.vn/vi/anh/anh-thoi-su-trong-nuoc-1014/van-hoa-soi-duong-le-hoi-chua-ong-o-bien-hoa-dong-nai-7232281.html"
+                  target="_blank"
+                  >vnanet.vn</a
+                >)
+              </li>
+              <li>
+                -Lễ hội Miếu Bà Rá<br />- Loại hình: lễ hội truyền thống
+                <br /><img
+                  src="https://th.bing.com/th/id/OIP.uhjMyp7sxRdHn7tS0BeS9wHaEe?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://baobinhphuoc.com.vn/news/9/143458/binh-phuoc-le-hoi-mieu-ba-ra-nam-2023"
+                  target="_blank"
+                  >baobinhphuoc.com.vn</a
+                >)
+              </li>
+              <li>
+                -Kỹ thuật chế biến rượu cần của người Xtiêng<br />- Loại hình:
+                nghề truyền thống <br /><img
+                  src="https://th.bing.com/th/id/OIP.Pp0wmv_tQiv47UmKrU9SNAHaFi?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://baotintuc.vn/doi-song-van-hoa/bao-ton-ky-thuat-che-bien-ruou-can-truyen-thong-cua-nguoi-stieng-20230407121128933.htm"
+                  target="_blank"
+                  >baotintuc.vn</a
+                >)
+              </li>
+              <li>
+                -Lễ hội Dua Tpeng (Phá bàu) của người Khmer<br />- Loại hình: lễ
+                hội truyền thống<br /><img
+                  src="https://tse4.mm.bing.net/th/id/OIP.rv0efH6Eh5_Dxl_pq4W2vgHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://phatsuonline.vn/binh-phuoc-dac-sac-le-hoi-dua-tpeng-pha-bau-cua-nguoi-khmer-57"
+                  target="_blank"
+                  >phatsuonline.vn</a
+                >)
+              </li>
+              <li>
+                -Lễ hội cầu bông của người Kinh<br />- Loại hình: lễ hội truyền
+                thống <br /><img
+                  src="https://vanhoatinnguong.vn/Uploads/images/2024/7/l%E1%BB%85_h%E1%BB%99i_c%E1%BA%A7u_b%C3%B4ng_b%C3%ACnh_ph%C6%B0%E1%BB%9Bc_0824.jpg"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://vanhoatinnguong.vn/bai-viet/le-hoi-cau-bong-cua-nguoi-kinh-o-binh-phuoc-20434.html"
+                  target="_blank"
+                  >vanhoatinnguong.vn</a
+                >)
+              </li>
+              <li>
+                -Nghề dệt thổ cẩm của người M'nông<br />- Loại hình: nghề truyền
+                thống <br /><img
+                  src="https://tse1.mm.bing.net/th/id/OIP.fyA0b3sGSYZpRXzL-SvvFAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+                  class="w3-container"
+                  alt=""
+                /><br />(nguồn thông tin và hình ảnh:
+                <a
+                  href="https://thanhnien.vn/nghe-det-tho-cam-cua-nguoi-mnong-la-di-san-van-hoa-phi-vat-the-quoc-gia-185230518145055707.htm"
+                  target="_blank"
+                  >thanhnien.vn</a
+                >)
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <h3>
+            <strong><mark>Tình hình giáo dục tỉnh Đồng Nai</mark></strong>
+          </h3>
+          <p>
+            <strong
+              ><mark
+                >Hệ thống trường học tại tỉnh Đồng Nai (tính đến
+                30/09/2018)</mark
+              ></strong
+            >
+            Tính đến thời điểm ngày 30 tháng 9 năm 2018, trên địa bàn toàn tỉnh
+            Đồng Nai có <u>745 trường học</u>, trong đó Trung học phổ thông có
+            <u>84 trường</u>, Trung học cơ sở có <u>273 trường</u>, Tiểu học có
+            <u>362 trường</u>, trung học có <u>23 trường</u>, có
+            <u>4 trường phổ thông cơ sở</u>, bên cạnh đó còn có
+            <u>327 trường mẫu giáo</u>. Với hệ thống trường học như thế, nền
+            giáo dục trong địa bàn tỉnh Đồng Nai tương đối hoàn chỉnh, góp phần
+            giảm thiểu nạn mù chữ. Trên địa bàn còn có cơ sở 2 của
+            <strong>Trường Đại học Mở Tp Hồ Chí Minh</strong> ở phường Long Bình
+            Tân, Tp Biên Hòa.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+            >wiki-Đồng Nai</a
+          >
+          )
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ ĐỒNG NAI</h2>
+          <p>
+            <mark><strong>Tình hình kinh tế tỉnh Đồng Nai</strong></mark
+            >: Năm <u>2020</u>, Đồng Nai là đơn vị hành chính đông dân thứ
+            <u>5</u> cả nước, xếp thứ <u>3</u> về Tổng sản phẩm trên địa bàn
+            (GRDP), thứ <u>6</u> về GRDP bình quân đầu người và đứng thứ
+            <u>19</u> về tốc độ tăng trưởng GRDP. Với <u>3.097.107</u> người
+            dân, GRDP đạt gần <u>400.000</u> tỷ đồng (tương ứng <u>17,2</u> tỷ
+            USD), GRDP bình quân đầu người đạt <u>124</u> triệu đồng (khoảng
+            <u>5.300</u> USD), tốc độ tăng trưởng GRDP dự kiến đạt trên
+            <u>9,0%</u>.
+          </p>
+          <p>
+            Đồng Nai là tỉnh cửa ngõ của vùng kinh tế Đông Nam Bộ, cùng Thành
+            phố Hồ Chí Minh và Bình Dương hình thành tam giác phát triển trọng
+            điểm; toàn tỉnh có hơn <u>32</u> khu công nghiệp đã được phê duyệt
+            và đi vào hoạt động. Năm <u>2011</u>, GDP của tỉnh tăng
+            <u>13,32%</u> so với năm <u>2010</u>, trong đó dịch vụ tăng
+            <u>14,9%</u>, công nghiệp – xây dựng tăng <u>14,2%</u>, nông, lâm
+            nghiệp và thủy sản tăng <u>3,9%</u>; quy mô GDP đạt <u>96.820</u> tỷ
+            đồng, thu nhập bình quân đầu người đạt <u>36,6</u> triệu đồng.
+          </p>
+          <p>
+            Đến năm <u>2019</u>, GDP bình quân đầu người đạt <u>3.720</u> USD
+            (tương đương <u>60,4</u> triệu đồng), tỷ lệ hộ nghèo còn
+            <u>1,8%</u>. Năm <u>2019</u>, chỉ số sản xuất công nghiệp tăng
+            <u>8,7%</u>, thu ngân sách đạt <u>54.431</u> tỷ đồng, kim ngạch xuất
+            khẩu đạt <u>19,7</u> tỷ USD, nhập khẩu đạt <u>16,5</u> tỷ USD, xuất
+            siêu khoảng <u>3,2</u> tỷ USD. Tổng vốn đầu tư phát triển đạt
+            <u>91.335</u> tỷ đồng; lũy kế toàn tỉnh có <u>1.457</u> dự án FDI
+            còn hiệu lực với tổng vốn đăng ký khoảng <u>30</u> tỷ USD và khoảng
+            <u>38.000</u> doanh nghiệp với tổng vốn đăng ký trên
+            <u>264.000</u> tỷ đồng.
+          </p>
+        </article>
+
+        <h2 style="text-align: center">Biểu đồ GRDP Đồng Nai 2016–2024</h2>
+        <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <canvas id="grdpChart" class="w3-center"></canvas>
+        </figure>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document.getElementById("grdpChart").getContext("2d");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"],
+              datasets: [
+                {
+                  label: "GRDP Đồng Nai (tỷ đồng)",
+                  data: [
+                    267000, 285000, 305000, 330000, 360000, 380000, 400000,
+                  ],
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: [8.5, 8.2, 8.9, 8.7, 2.5, 4.0, 9.0],
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế tỉnh Đồng Nai (2016–2022)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: { title: { display: true, text: "Năm" } },
+              },
+            },
+          });
+        </script>
+        <p>
+          <strong>Lưu ý:</strong>
+          <em
+            >số liệu các năm trên chỉ là ước tính, dựa trên tốc độ tăng trưởng
+            GRDP trung bình và dữ liệu năm 2016</em
+          >
+        </p>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a
+            href="https://vi.wikipedia.org/wiki/%C4%90%E1%BB%93ng_Nai"
+            target="_blank"
+            >Wikipedia – Đồng Nai</a
+          >)
+        </p>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Đồng Nai có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Dơi Xào Lăn
+              </summary>
+              <p>
+                Dơi vốn được xem là món đặc sản được nhiều người yêu thích. Có
+                thể nói Long Khánh Đồng Nai là vùng đất nổi tiếng với món dơi
+                xào lăn hấp dẫn. Dơi là nguyên liệu khá đặc biệt. Vì vậy, để sử
+                lí và chế biến chúng đòi hỏi sự khéo khéo. Khi làm thịt dơi cần
+                đặc biệt lưu ý không được rửa với nước. Đối với người dân địa
+                phương, cái thú khi ăn dơi chính là được thưởng thức vào khoảng
+                thời gian đêm khuya tĩnh lặng. Khi hương vị tự nhiên của thịt
+                dơi trở nên trọn vẹn nhất. Theo kinh nghiệm của họ, dơi càng có
+                mùi hôi thì thịt càng thơm ngon, đậm đà hơn. Được biết đây là
+                món ăn quen thuộc trong trong các bữa cơm thường ngày của người
+                dân Đồng Nai.
+              </p>
+              -Giá tham khảo:~150.000 đến ~200.000 đồng/phần <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/yD84cz1naK7k3aV29"
+                >Ấp 1 Gia Canh, Định Quán, Đồng Nai, Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-750x394.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gỏi Cá Biên Hòa
+              </summary>
+              <p>
+                Thêm danh sách đặc sản Đồng Nai, không thể bỏ qua món gỏi cá
+                Biên Hòa. Không cầu kì trong cách chế biến nhưng hương vị của
+                món ăn thì vô cùng tuyệt vời. Đơn giản chỉ là dĩa thịt cá và
+                nước lèo kèm. Đi kèm với đó là đủ các loại rau vậy mà món gỏi cá
+                đã làm nên thương hiệu ẩm thực đặc sắc. Cá để làm gỏi thường là
+                những loại cá sông có nhiều thịt như cá diêu hồng, cá chép, hoặc
+                cá tai tượng. Tất cả đều là cá tươi sống vừa được bắt lên bờ,
+                còn quẫy đuôi mạnh.
+              </p>
+              -Giá tham khảo:50.000 đến 150.000đ/người <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/63zgqnCQ3pGfivtVA"
+                >160 Đ. Huỳnh Văn Hớn, Thống Nhất, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-1-750x500.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cơm Gà Cá Mặn
+              </summary>
+              <p>
+                Một trong những món ăn nổi tiếng khiến du khách luôn nhớ đến
+                vùng đất Long Khánh, Đồng Nai chính là cơm gà cá mặn. Không một
+                con phố, ngõ hẻm nào mà không bán món ngon này. Khi đến đây du
+                khách không thưởng thức món này thì quả thật là đáng tiếc. Việc
+                nấu và thưởng thức món ăn này dường như đã trở thành thói quen
+                thường xuyên trong mỗi gia đình.
+              </p>
+              -Giá tham khảo: ~120.000 – 200.000 đồng/suất <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/hiiNhqqBWW2ksN3o6"
+                >285 Đ. Phan Trung, Tân Mai, Biên Hòa, Đồng Nai 810000,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-2-750x497.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Ươi Rừng
+              </summary>
+              <p>
+                Cái tên tiếp theo sẽ góp mặt trong danh sách này chính là Ươi
+                Rừng. Bên ngoài trái ươi rừng trông khá nhỏ, có màu nâu và có
+                một lớp vỏ khá nhăn nheo. Trái ươi là loại quả quý hiếm, với cây
+                ươi cao lớn và việc thu hoạch đòi hỏi những người thợ phải khéo
+                léo leo trèo. Mùa ươi không phải năm nào cũng có, có khi phải
+                chờ đến hai hoặc ba năm mới trúng mùa. Với hàm lượng dinh dưỡng
+                cao và lợi ích tuyệt vời cho sức khỏe. Ươi được xem là một trong
+                những đặc sản độc đáo của Đồng Nai. Chính vì vậy, giá thành có
+                phần hơi cao dao động từ 50k – 150k/kg.
+              </p>
+              -Giá tham khảo:50.000 – 150.000/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/3jTg3nPPhbA3Kf3N8"
+                >30-32 Nguyễn Văn Trị, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-3-750x750.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Dế Cơm Chiên Mắm
+              </summary>
+              <p>
+                Dế Cơm Chiên Mắm độc đáo, đậm đà hương vị đặc trưng của Đồng Nai
+                đã lưu giữ lại nhiều hương vị với du khách. Món ăn ngon và nổi
+                tiếng này đã vang đi khắp nơi. Người ta thường ưa chuộng bắt dế
+                cơm hơn so với các loại dế khác như dế than, dế lửa hay dế tiêu.
+                Điều này là vì dế cơm ăn cỏ, thân hình to béo, sạch sẽ, và có
+                hương vị thơm ngon đặc trưng. Món ăn dân dã này chỉ bao gồm ế
+                cơm, nước mắm, và các loại gia vị quen thuộc. Hương vị của món
+                ăn sẽ được quyết định bởi đôi bàn tay khéo léo của người đầu
+                bếp. Hương vị béo ngậy của dế cùng với vị mặn mặn cay cay của
+                các loại gia vị đi kèm.
+              </p>
+              -Giá tham khảo:120.000 – 200.000đ / phần <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/io45n1TKwDxLLKRG7"
+                >131 Cách Mạng Tháng 8, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-4-750x422.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Canh Chua Lá Giang
+              </summary>
+              <p>
+                Canh Chua Lá Giang là đặc sản Đồng Nai tiếp theo hấp dẫn thực
+                khách. Bất kỳ ai đã thưởng thức món canh này đều không thể quên
+                được hương vị của nó. Tùy thuộc vào từng người nấu mà có thê
+                thêm bớt các nguyên liệu, gia vị sao cho phù hợp với khẩu vị.
+                Nhưng nguyên liệu cho món ăn này vẫn là gà ta kết hợp với một ít
+                lá giang. Vị ngọt tự nhiên từ gà, vị chua thanh nhẹ của lá
+                giang. Có thể nói đây là sự kết hợp vô cùng tuyệt vời
+              </p>
+              -Giá tham khảo:~ ₫60.000 – ₫120.000/phần <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/dunfDYsPybNLwf3b8"
+                >131 Cách Mạng Tháng 8, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-6-750x422.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nấm Mối
+              </summary>
+              <p>
+                Nấm mối vốn là đặc sản nổi tiếng ở Đồng Nai. Thường xuất hiện
+                vào khoảng mùng 5 tháng 5 âm lịch. Nấm mối sẽ mọc sau khi cơn
+                mưa đầu mùa, chỉ mọc vào ban đêm, và có vòng đời chỉ chưa đến
+                một ngày. Nấm ngon nhất chính là lúc mới mọc, nấm vẫn còn hình
+                búp. Khi nấm nở to thì ăn còn ngon ngọt nữa. Thoạt mới nghe,
+                chúng sẽ không biết sẽ chế biến món ăn gì với loại nguyên liệu
+                quá đỗi dân dã này. Nhưng dưới bàn tay sành điệu về ẩm thực thì
+                có thể chế biến được vô vàn món ngon.
+              </p>
+              <p>
+                Nấm mối là một loại nấm có nhiều lợi ích và được sử dụng trong
+                nhiều món ăn ngon như cháo nấm, canh nấm. Bên cạnh đó, nấm mối
+                còn có thể được bọc trong các loại lá như lá chuối, lá nghệ, lá
+                lốt rồi nướng lên, mang lại hương vị thơm phức, đậm đà. Ở Đồng
+                Nai, nấm mối mọc nhiều tại các khu vực như Phú Hội, Long Khánh,
+                Cẩm Mỹ, Định Quán và Thống Nhất. Trong đó, Phú Hội được biết đến
+                là vùng nổi tiếng nhất với nấm mối, đặc biệt là món cháo nấm trứ
+                danh.
+              </p>
+              -Giá tham khảo: nấm mối trên thị trường dao động từ 150.000 đến
+              200.000 đồng/kg. Còn nấm búp – loại nấm nhỏ, non – có giá cao hơn,
+              từ 800.000 đến 1.000.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/3jTg3nPPhbA3Kf3N8"
+                >30-32 Nguyễn Văn Trị, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-5-750x563.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Mít Tố Nữ
+              </summary>
+              <p>
+                Đồng Nai vốn nổi tiếng trứ danh bởi món Mít Tố Nữ. Mít tố nữ có
+                kích thước nhỏ hơn nhiều so với các loại mít thông thường, nhưng
+                lại mang một hương vị ngọt ngào rất đặc trưng, như sự kết hợp
+                giữa mít ướt và sầu riêng. Mít thì không hiếm, nhưng mít tố nữ
+                lại quý hơn, ngon hơn và tất nhiên, giá thành cũng cao hơn. Đặc
+                biệt, Long Khánh là vùng nổi tiếng nhất với những trái mít tố nữ
+                thơm ngon hảo hạng.
+              </p>
+              -Giá tham khảo:25.000 – 40.000 đ/kg <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/QvxY2QnqQTudHuVL8"
+                >30-32 Nguyễn Văn Trị, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-8-750x436.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Lẩu Lá Khổ Qua
+              </summary>
+              <p>
+                Sau món canh chua lá Giang thì lẩu lá khổ qua cũng được xem là
+                món ăn khá quen thuộc của người dân Long Khánh Đồng Nai. Khổ qua
+                rừng có kích thước nhỏ hơn và vị đắng hơn rất nhiều so với loại
+                khổ qua thông thường. Vì thế, thay vì dùng phần trái để nhồi
+                thịt hay xào trứng như khổ qua thường. Người dân nơi đây đã sáng
+                tạo và khéo léo biến tấu phần lá để tạo nên món lẩu lá khổ qua
+                rừng đầy hấp dẫn. Được biết lá khổ qua rừng khá đắng nhưng hậu
+                vị thì lại ngọt.
+              </p>
+              -Giá tham khảo:150.000 – 300.000 đ/nồi <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/sPGDpJRhxtLWB9eC6"
+                >Unnamed, Road, Thống Nhất, Đồng Nai, Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-7-750x500.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bưởi Tân Triều
+              </summary>
+              <p>
+                Bưởi Tân Triều từ lâu đã ngon nức tiếng, lại chế biến được rất
+                nhiều món ăn lạ miệng nhưng cũng không kém phần hấp dẫn. Hiện
+                nay, Tân Triều có khoảng 400ha diện tích trồng bưởi, tập trung
+                vào các giống như bưởi đường lá cam, bưởi xiêm ruột đỏ, bưởi da
+                xanh ruột hồng, bưởi ổi, và bưởi da láng. Bưởi Tân Triều không
+                chỉ đa dạng với cả loại ngọt lẫn chua để phù hợp với khẩu vị
+                người tiêu dùng, mà còn có đặc điểm chung là vỏ mỏng, múi mọng
+                nước nhưng vẫn giữ được độ giòn dai hấp dẫn. Một điều tuyệt vời
+                nữa là bưởi Tân Triều có thể bảo quản lâu ngày mà vẫn giữ nguyên
+                hương vị tươi ngon.
+              </p>
+              -Giá tham khảo:~60.000 đ/kg <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/QvxY2QnqQTudHuVL8"
+                >30-32 Nguyễn Văn Trị, Trung Dũng, Biên Hòa, Đồng Nai,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-9-750x563.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Khô Cá Kìm
+              </summary>
+              <p>
+                Khô cá kìm cũng là món quà thiên nhiên, là đặc sản hấp dẫn mà hồ
+                Trị An ban tặng cho người dân. Lượng cá kìm ở hồ khá lớn nên
+                người dân đã chế biến ra món cá kìm khô với mục đích để bảo quản
+                lâu hơn. Dẫn dà, đặc sản dân dã này được nhiều du khách biết đến
+                và mua làm quà biếu cho người thân, bạn bè. Cách chế biến cá kìm
+                khô cũng không quá khó. Cá kìm sau khi được xử lí sạch sẽ, được
+                tẩm ướp các loại gia vị như ớt bột,muối, đường với tỉ lệ hài
+                hòa. Cuối cùng đem phơi khô một nắng giòn tan là có thể đóng
+                gói. Để thưởng thức món ăn này bạn chỉ cần chiên giòn sau đó đem
+                ra chấm với nước mắm hoặc chút tương là đủ tuyệt vời.
+              </p>
+              <p>
+                Cá lìm kìm sau khi được bắt về sẽ được làm sạch, xẻ đôi rồi đem
+                phơi từ 2 đến 3 nắng để làm khô. Cá lìm kìm tại hồ Trị An có
+                thân hình nhỏ nhắn, màu trắng sữa hoặc trong suốt, với phần thịt
+                ngọt, dai và rất ít xương. Điểm đặc biệt của khô cá lìm kìm là
+                khi chiên lên sẽ trở nên giòn rụm từ đầu đến đuôi. Khi nhai,
+                người ăn sẽ cảm nhận được vị giòn tan hòa quyện cùng vị mặn nhẹ
+                và cay cay. Chính vì thế, cá lìm kìm khô được dùng để chế biến
+                thành nhiều món ngon, bổ dưỡng, khiến ai đã thử qua cũng khó
+                lòng quên.
+              </p>
+              -Giá tham khảo:~300.000 – 700.000 đ/kg <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/vzj2bMr6ULQHi1cZ7"
+                >Ấp, Bến Nôm 2, Định Quán, Đồng Nai 76715, Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-10.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Chả Lụi
+              </summary>
+              <p>
+                Cái tên cuối cùng xuất hiện trong danh sách đặc sản Đồng Nai
+                chính là món chả lụi. Chả lụi ở Biên Hòa khá nhỏ. Chả lụi, theo
+                lời kể của nhiều người bán, có nguồn gốc từ một tỉnh miền Trung.
+                Từ “lụi” ám chỉ cách nướng đặc biệt, khi những miếng chả được
+                xiên qua que tre nhỏ và nướng trực tiếp trên bếp than hồng. Khác
+                với những món ăn đòi hỏi sự phức tạp trong khâu chuẩn bị, chả
+                lụi tuy đơn giản nhưng lại mang trong mình hương vị đặc trưng
+                khó quên.
+              </p>
+              -Giá tham khảo:15.000 – 25.000 đ/xiên <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/EqNxsSnmf64QDrFk8"
+                >đường Huỳnh Văn Nghệ, Bửu Long, Biên Hòa, Đồng Nai, Vietnam</a
+              ><br />
+              <img
+                src="https://inhat.vn/wp-content/uploads/2020/08/dac-san-dong-nai-11-750x362.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a href="https://inhat.vn/dac-san-dong-nai/" target="_blank"
+                  >inhat.vn</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gà hấp bưởi
+              </summary>
+              <p>
+                Nhắc đến đặc sản Đồng Nai, bạn không thể bỏ qua món gà hấp bưởi
+                độc đáo, có một không hai này. Với nguyên liệu là gà và bưởi Tân
+                Triều. Gà được chọn là gà ri và gà đồi, thịt rất săn chắc và da
+                vàng ươm bắt mắt.
+              </p>
+              -Giá tham khảo:Khoảng 300.000 - 350.000 VNĐ/phần <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/DT997fzSfYU7s8uz6"
+                >133/17 Hương Lộ 9, Tân Triều, Vĩnh Cửu, Đồng Nai, Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2021/07/01/1364866/dong-nai-co-dac-san-gi-15-dac-san-dong-nai-mua-lam-qua-202206151609309734.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-10-dac-san-dong-nai-mua-ve-lam-qua-tang-tuyet-nhat-1364866"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Gỏi hạt điều
+              </summary>
+              <p>
+                Một món ăn mà khi đến Bình Phước nhất định phải thử đó chính là
+                món gỏi hạt điều. Sự thay thế hạt điều cho đậu phộng kết hợp với
+                thịt ba chỉ, tôm sú và rau thơm đã tạo nên một dĩa gỏi có cân
+                bằng về hương vị và vô cùng thơm ngon hấp dẫn.
+              </p>
+              -Giá tham khảo:100.000 đồng/phần. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/ZzXZRPHBPHLzEW6Q6"
+                >84 Đường Võ Văn Tần, Tân Bình, Đồng Xoài, Bình Phước,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240825548326.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Ve sầu sữa chiên giòn
+              </summary>
+              <p>
+                Chẳng cần phải đi sang Campuchia bạn hoàn toàn có thể thưởng
+                thức được đặc sản ve sầu sữa ngay tại tỉnh Bình Phước. Đây là
+                một món ăn đặc sản của người Khơ Me bản địa, với lớp vỏ bên
+                ngoài giòn giòn, bên trong beo béo kết hợp với một chút nước mắm
+                tạo nên hương vị say đắm mà không thực khách nào có thể cưỡng
+                lại được.
+              </p>
+              -Giá tham khảo:Khoảng 150.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/ScgtGwawmxGa8ugU7"
+                >11 Đường Nơ Trang Long, Tân Bình, Đồng Xoài, Bình Phước,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240826191654.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cơm lam
+              </summary>
+              <p>
+                Không cần phải đi đến những vùng núi Tây Bắc bạn vẫn hoàn toàn
+                có thể thưởng thức được đặc sản này ngay tại tỉnh Bình Phước.
+                Những ống cơm dẻo dẻo thơm thơm nóng hổi từ trong ống tre sẽ
+                khiến cho mọi thực khách phải xiêu lòng. Đặc biệt hơn khi ăn cơm
+                lam kết hợp cùng với những món như gà nướng, heo nướng và rau
+                rừng bản địa thì bữa ăn thật sự là quá đỗi hoàn hảo.
+              </p>
+              -Giá tham khảo:20.000 đồng/phần. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/1MEgouzhrJ87NQ6y7"
+                >HWG9+2F9, KP5, Tân Phú, Đồng Phú, Bình Phước, Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240826427878.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Canh thụt
+              </summary>
+              <p>
+                Ta thưởng thức qua món cơm lam thịt nướng mà không thưởng thức
+                qua món đặc sản canh thụt thì vẫn chưa trải nghiệm ẩm thực bình
+                Phước một cách trọn vẹn. Món ăn là sự kết hợp giữa rau rừng,
+                thịt cua đồng, thịt tép và ốc đá. Tất cả những nguyên liệu ấy
+                được vào trong đưa ống tre nấu đến khi chín mềm thì sẽ được thụt
+                để lấy ra. Đó là lý do tại sao đặc sản này có tên là canh thụt.
+                Món ăn có phần đơn giản nhưng lại mang đậm hương vị ẩm thực nơi
+                đây.
+              </p>
+              -Giá tham khảo:Khoảng 50.000 - 70.000 đồng/phần. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/xyYjdboBtFmNG5KW9"
+                >172 Đ. Nguyễn Huệ, Phường Tân Thiện, Đồng Xoài, Bình Phước,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240826542873.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Heo mẹt Đồng Xoài
+              </summary>
+              <p>
+                Một món ăn mà khi đến khu vực Đồng Xoài tỉnh Bình Phước bạn
+                không thể nào bỏ qua đó chính là món heo mẹt. Món ăn này xứng
+                đáng có được một điểm mười về hương vị và điểm một trăm về chất
+                lượng.
+              </p>
+              <p>
+                Sự kết hợp giữa thịt heo địa phương và đồ chua cùng một chén
+                nước mắm cay tạo nên những miếng thịt ngọt lịm hòa với vị cay
+                cay ngon không thể nào tả được. Nếu có dịp đi qua đây thì chắc
+                chắn bạn không thể nào bỏ qua món đặc sản này.
+              </p>
+              -Giá tham khảo:Khoảng 350.000 đồng/mẹt. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/7eBhR6HCzSdvYeYXA"
+                >GVJR+HHP, Lương Thế Vinh, Tân Bình, Đồng Xoài, Bình Phước,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240827090526.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Lá nhíp xào
+              </summary>
+              <p>
+                Thiên nhiên đã ban tặng cho Bình Phước vô vàn sản vật và lá nhíp
+                chính là một trong những đặc sản ấy. Xào lá nhíp với thịt heo,
+                thịt bò là chúng ta đã có được một dĩa lá nhíp xào vô cùng thơm
+                ngon hấp dẫn. Món ăn có phần mộc mạc chân chất nhưng lại vô cùng
+                lôi cuốn khiến bạn muốn ăn mãi không thôi.
+              </p>
+              -Giá tham khảo: Khoảng 55.000 đồng/phần.<br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/NzvsGfrLiy99Ja4L9"
+                >GVMQ+2RC, Tân Bình, Đồng Xoài, Bình Phước, Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240827424437.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Hạt điều rang muối
+              </summary>
+              <p>
+                Đã nhắc đến Bình Phước là không thể nào không nhắc đến những
+                vườn điều bạt ngàn.Hạt điều có hương vị béo béo bùi bùi hòa
+                quyện với chút muối tạo nên sự cân bằng cho món ăn tuy đơn giản
+                nhưng lại rất lôi cuốn và khó quên. Chính vì lẽ đó mà hạt điều
+                rang muối Bình Phước luôn mang lại một hương vị rất riêng cho
+                mỗi thực khách đến du lịch nơi đây.
+              </p>
+              -Giá tham khảo: 135.000 - 180.000 đồng/kg.<br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/bwtZx6KiJo31KTao6"
+                >367 ấp 2, Lộc Điền, Lộc Ninh, Bình Phước 67619, Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240822567086.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh hạt điều
+              </summary>
+              <p>
+                Được thiên nhiên ban tặng cho những cánh đồng điều bạc ngàn
+                người dân nơi đây đã biết kết hợp với những nguyên liệu sẵn có
+                để tạo ra một thứ bánh đơn giản nhưng lại ngây ngất lòng người:
+                Bánh hạt điều.
+              </p>
+              <p>
+                Sự kết hợp của những nguyên liệu thông thường như bột mì, trứng
+                gà, bột nổi, bột quế và nguyên liệu chính là hạt điều đã giúp
+                tạo nên một loại bánh vừa mềm mềm vừa giòn tan rất là thú vị.
+                Đây chính là thứ quà bánh mà bất cứ người dân hay khách du lịch
+                nào ghé thăm Bình Phước cũng muốn đem về làm quà biếu.
+              </p>
+              -Giá tham khảo:200.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/u4LDjjtWvTT8r2qw9"
+                >28 Trương Công Định, Tân Phú, Đồng Xoài, Bình Phước 02713,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240823389434.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Thịt heo thả rông
+              </summary>
+              <p>
+                Thịt heo thả rông ở Bình Phước chủ yếu đến từ Sóc Bombo, với chế
+                độ ăn tự nhiên cùng với việc thả và di chuyển nhiều ở trên rừng
+                và trên rẫy heo có vị ngọt, chắc thịt nhưng không nhiều mỡ. Đây
+                là một đặc sản có thể được chế biến thành nhiều món heo giả cầy,
+                heo quay, heo nướng hoặc có thể mua về làm quà biếu.
+              </p>
+              -Giá tham khảo:200.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/mmkKN7fdS2rXDeVD7"
+                >32 Đường Lê Quý Đôn, Khu Phố Phước Thiện, Đồng Xoài, Bình
+                Phước, Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240824018391.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">Cà phê</summary>
+              <p>
+                Không chỉ ở Tây Nguyên hay cao nguyên Lâm Đồng bạt ngàn mới có
+                được những hạt cà phê chất lượng. Cà phê Bình Phước có mùi rất
+                đặc trưng hương vị đậm đà say đắm. Mỗi lần đến nơi đây thực
+                khách có thể mua cà phê chồn, cà phê xay sẵn hoặc cà phê nguyên
+                hạt về làm quà biếu và chắc chắn món quà ấy sẽ ghi điểm trong
+                lòng người được tặng.
+              </p>
+              -Giá tham khảo:210.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:<a
+                href="https://maps.app.goo.gl/Q5ai2sCn84qJCZ9z6"
+                >71 Hùng Vương, Tân Bình, Đồng Xoài, Bình Phước 67000,
+                Vietnam</a
+              ><br />
+              <img
+                src="https://cdn.tgdd.vn/Files/2022/06/24/1442040/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-202206240824192911.jpg"
+                class="w3-container"
+                alt="bu"
+              /><br />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.bachhoaxanh.com/kinh-nghiem-hay/binh-phuoc-co-dac-san-gi-15-dac-san-binh-phuoc-mua-lam-qua-1442040"
+                  target="_blank"
+                  >bachhoaxanh.com</a
+                >
+                )
+              </p>
+            </details>
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Đồng Nai có những điểm du lịch nổi tiếng như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Công viên nước The Amazing Bay - Vịnh Kỳ Diệu
+              </summary>
+              <p class="detail-content">
+                Công viên nước The Amazing Bay là tổ hợp vui chơi giải trí dưới
+                nước quy mô lớn, tọa lạc tại số 22, đường Võ Thị Sáu, phường
+                Long Tân, thành phố Biên Hòa, tỉnh Đồng Nai – chỉ cách TP.HCM
+                khoảng 30 km, thuận tiện cho các chuyến đi trong ngày hoặc cuối
+                tuần. Được mệnh danh là “vịnh biển giữa lòng thành phố”, The
+                Amazing Bay sở hữu diện tích hơn 25 ha với hàng loạt công trình
+                hiện đại và hệ thống trò chơi đẳng cấp quốc tế.
+              </p>
+              <p>
+                Nơi đây nổi bật với những kỷ lục ấn tượng như: biển nhân tạo lớn
+                nhất Việt Nam, dòng sông lười dài nhất Đông Nam Á, và hệ thống
+                máng trượt nước cao hơn 20 mét. Khuôn viên được chia thành nhiều
+                phân khu phù hợp với mọi độ tuổi như: khu vui chơi trẻ em, khu
+                cảm giác mạnh, khu thư giãn, bãi biển nhân tạo và các khu nhà
+                hàng, dịch vụ tiện ích. Không chỉ là nơi giải trí sôi động, công
+                viên còn mang đậm phong cách thiết kế cổ tích, hiện đại, thích
+                hợp để check-in, chụp ảnh.
+              </p>
+              <img
+                src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/7369264504118/The-Amazing-Bay-Water-Park-Tickets-b602de55-70f4-49eb-9a99-4aea80e7e586.png?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Rừng Mã Đà
+              </summary>
+              <p class="detail-content">
+                Rừng Mã Đà là một khu rừng nguyên sinh xanh mát và bí ẩn, nằm
+                trong Khu bảo tồn thiên nhiên – văn hóa Đồng Nai, thuộc địa phận
+                huyện Vĩnh Cửu, tỉnh Đồng Nai, cách trung tâm TP.HCM khoảng 90
+                km. Với hệ sinh thái phong phú, rừng Mã Đà là nơi lý tưởng cho
+                các hoạt động du lịch sinh thái, trekking, cắm trại và khám phá
+                thiên nhiên hoang dã.
+              </p>
+              <p>
+                Khu rừng nổi bật với thảm thực vật rậm rạp, những con đường mòn
+                uốn lượn, suối nước trong lành và đặc biệt là hồ Trị An – một hồ
+                nước ngọt rộng lớn, nơi thường xuyên diễn ra các hoạt động bơi
+                lội, chèo thuyền kayak và câu cá thư giãn. Không khí ở đây quanh
+                năm mát mẻ, trong lành, rất thích hợp để “đi trốn” khỏi sự ồn ào
+                của phố thị. Ngoài ra, rừng Mã Đà còn gắn liền với nhiều dấu
+                tích lịch sử kháng chiến, là nơi lưu giữ ký ức về những trận
+                đánh hào hùng của quân dân miền Nam trong kháng chiến chống Mỹ.
+              </p>
+              <img
+                src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/6257449322358/2D1N-Camping-Tour-to-Explore-Ma-Da---Tri-An-Lake-depart-from-Ho-Chi-Minh-City-bf2d8d2d-7b9b-4ed7-97ea-3adfdf722235.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Hồ Trị An - viên ngọc xanh của Đồng Nai
+              </summary>
+              <p class="detail-content">
+                Hồ Trị An là một hồ nước ngọt nhân tạo rộng lớn nằm trên sông
+                Đồng Nai, thuộc địa phận các huyện Vĩnh Cửu, Định Quán và Thống
+                Nhất của tỉnh Đồng Nai, cách trung tâm TP.HCM khoảng 70 km. Được
+                xây dựng vào những năm 1980 nhằm phục vụ cho Nhà máy Thủy điện
+                Trị An, ngày nay hồ không chỉ có vai trò quan trọng về mặt thủy
+                lợi và điện năng, mà còn là điểm đến du lịch sinh thái lý tưởng,
+                thu hút đông đảo du khách yêu thiên nhiên, thích khám phá và thư
+                giãn.
+              </p>
+              <p>
+                Hồ Trị An gây ấn tượng với mặt nước xanh trong, bao quanh là
+                rừng rậm nguyên sinh và những hòn đảo nhỏ hoang sơ như đảo Ó,
+                đảo Đồng Trường… tạo nên bức tranh thiên nhiên hài hòa, thơ
+                mộng. Đây là nơi lý tưởng để cắm trại, chèo thuyền kayak, câu
+                cá, đạp xe xuyên rừng và ngắm hoàng hôn tuyệt đẹp bên mặt hồ
+                lặng sóng. Vào ban đêm, du khách có thể tổ chức tiệc BBQ, ngắm
+                sao và tận hưởng không khí mát lạnh, tĩnh lặng.
+              </p>
+              <img
+                src="https://xpscntm-asset-6aaa6adb24ad2493.s3.ap-southeast-1.amazonaws.com/6257449322358/2D1N-Camping-Tour-to-Explore-Ma-Da---Tri-An-Lake-depart-from-Ho-Chi-Minh-City-93ed186e-847a-455c-8fb6-d0e696eed551.jpeg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Đá Hàn
+              </summary>
+              <p class="detail-content">
+                Địa điểm du lịch Đồng Nai đầu tiên phải kể đến đó chính là Thác
+                Đá Hàn. Cách trung tâm Sài Gòn khoảng 70km, Thác Đá Hàn được
+                thiên nhiên ưu đãi với không gian thoáng đãng, khung cảnh đa
+                dạng. Khi đến đây, bạn cảm nhận rõ ràng không khí trong lành,
+                mát mẻ.
+              </p>
+              <p>
+                Thác Đá Hàn cũng là nơi lý tưởng để bạn tụ tập bạn bè xả stress
+                với các hoạt động tắm thác, câu cá… vào mỗi cuối tuần hay tổ
+                chức cắm trại dã ngoại cho cả gia đình. Điểm khiến bao du khách
+                cực kỳ yêu thích nơi này là đa số các hoạt động giải trí ở đây
+                đều miễn phí. Bạn thỏa thích vui chơi tùy ý. Đặc biệt, thác Đá
+                Hàn có đường đua riêng cho xe địa hình nếu bạn muốn tham gia.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-2.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Mai
+              </summary>
+              <p class="detail-content">
+                Bạn phải chuẩn bị tinh thần thật kỹ trước khi đặt chân đến Thác
+                Mai đó nhé. Bởi, khung cảnh rừng nguyên sinh nơi đây sẽ khiến
+                bạn choáng ngợp vô cùng. Nằm cách Sài Gòn khoảng 130km, bạn mất
+                khoảng 2-3 giờ để di chuyển bằng xe máy đến địa điểm check - in
+                Đồng Nai tuyệt đẹp này.
+              </p>
+              <p>
+                Đây chính là địa điểm lý tưởng để bạn dành thời gian cắm trại,
+                nướng đồ ăn picnic cuối tuần. Bạn nhớ xem trước dự báo thời
+                tiết. Sau đó, bạn cùng mị người mang theo lều, chuẩn bị đồ ăn.
+                Nếu bạn quá bận rộn thì có thể liên hệ thuê lều và nhờ nhà hàng
+                ở gần đó chuẩn bị giúp.
+              </p>
+              <p>
+                Điểm đặc biệt của Thác Mai chính là độ cao. Ngọn tháp có độ cao
+                vừa phải. Nhìn từ xa dòng nước có vẻ rất nhẹ nhàng. Tuy vậy, khi
+                đến những đoạn hẹp hơn, dòng nước đột nhiên chuyển mình, mạnh mẽ
+                hơn bao giờ hết. Đây cũng chính địa điểm được xuất hiện trong MV
+                “Lật Mặt” của Lý Hải đó..
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-3.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu du lịch Bửu Long
+              </summary>
+              <p class="detail-content">
+                Khu du lịch Bửu Long được mọi người vô cùng yêu thích nhờ không
+                gian rộng rãi, cách sắp xếp bày trí giống như đang đến Vịnh Hạ
+                Long vậy. Địa điểm du lịch Đồng Nai này được chia làm hai phần
+                chính gồm Long Sơn Thạch Động và núi Bình Điện. Khi đến đây, bạn
+                sẽ vô cùng ngỡ ngàng, choáng ngợp trước làn nước trong xanh ghi
+                hình vách đá. Điều đó tạo nên khung cảnh ấn tượng khó phai.
+              </p>
+              <p>
+                Bạn nhớ ghé qua khu vui chơi tại trung tâm khu du lịch Bửu Long
+                để tham gia các trò chơi hiện đại như xe điện đụng. Sau đó, bạn
+                đến thăm Bửu Phong Cổ Tự để cảm nhận khung cảnh nhẹ nhàng. Đặc
+                biệt, bạn sẽ được chiêm ngưỡng những bảo vật vô cùng quý hiếm
+                tại khu Tiền Sử tại khu du lịch Bửu Long.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-4.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu du lịch Tre Việt
+              </summary>
+              <p class="detail-content">
+                Nằm cách Sài Gòn 15km, đây là địa điểm du lịch Đồng Nai được bao
+                du khách trong và ngoài nước ghé thăm thường xuyên. Khu du lịch
+                sở hữu diện tích vô cùng rộng lớn lên đến 45.000m2. Bạn sẽ được
+                trải nghiệm không gian mộc mạc, những mái nhà được dựng lên từ
+                tre tại đây.
+              </p>
+              <p>
+                Địa điểm du lịch này có vô vàn những trò chơi từ truyền thống
+                đến hiện đại cho bạn khám phá. Bạn có thể thỏa sức bơi lội, đạp
+                xe trên mặt nước, chèo thuyền Kayak. Mặc khác, bạn cũng có thể
+                chọn lựa tham gia trò chơi truyền thống như chèo thuyền chuối,
+                chèo xuồng ba lá hay chèo thuyền thúng.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-5.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Núi Chứa Chan
+              </summary>
+              <p class="detail-content">
+                Núi Chứa Chan là địa điểm yêu thích cho các bạn trẻ đam mê khám
+                phá, trải nghiệm. Khi đến đây, bạn sẽ được check - in gốc cây đa
+                ba gốc, ngắm khung cảnh hoàng hôn, bình minh tuyệt đẹp.
+              </p>
+              <p>
+                Bạn cũng sẽ được trải nghiệm cảm nhận được vị ngọt khi uống nước
+                suối tại núi. Nếu bạn may mắn đến đây vào khoảng tháng 5, bạn sẽ
+                có những bức hình cực kỳ thơ mộng với cánh đồng cỏ lau vàng.
+              </p>
+              <p>
+                Khi tham gia leo núi, bạn nhớ lựa chọn cho mình một đôi giày êm
+                ái, nhẹ nhàng giúp bảo vệ đôi chân. Đừng quên chuẩn bị nước dành
+                cho bản thân khi leo nhé. Đặc biệt, bạn nhớ luôn bám sát đồng
+                đội của mình để tránh lạc đường.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-6.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đá Ba Chồng
+              </summary>
+              <p class="detail-content">
+                Cùng với cung đường khám phá núi Chứa Chan, bạn nhớ ghé thăm
+                quần thể Đá Ba Chồng khi đến Đồng Nai. Do sự biến đổi của địa
+                chất nên các khối đá ở đây sở hữu hình dạng lớn bé khác nhau.
+                Việc nằm ngay trung tâm của khu đô thị sầm uất Định Quán khiến
+                cho vẻ đẹp của Đá Ba Chồng càng trở nên thu hút, nổi bật.
+              </p>
+              <p>
+                Theo nghiên cứu, Đá Ba Chồng xuất hiện vào nền văn hóa Óc Eo Phù
+                Nam của Đông Nam Bộ. Vào năm 1988, địa điểm check - in ở Đồng
+                Nai độc đáo này đã được xếp hạng là di tích thắng cảnh cấp quốc
+                gia.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-7.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Làng Bưởi Tân Triều
+              </summary>
+              <p class="detail-content">
+                Mặc dù luôn nép mình e thẹn so với các địa điểm du lịch Đồng Nai
+                khác những làng bưởi Tân Triều thu hút rất nhiều du khách trẻ
+                ghé thăm. Bởi nơi đây sở hữu những nét đẹp độc đáo, riêng biệt.
+              </p>
+              <p>
+                Làng bưởi Tân Triều nằm cách thành phố Biên Hòa, Đồng Nai chỉ
+                3km. Đường đi vô cùng thuận lợi, dễ dàng. Chỉ cần đặt chân tới
+                đầu làng thôi là bạn đã cảm nhận được hương bưởi nhẹ nhàng bay
+                trong gió. Khi ghé thăm nơi này, bạn có cơ hội thưởng thức vô
+                cùng nhiều món ăn đặc sắc được chế biến từ bưởi. Đó có thể là
+                nem bưởi, gà hấp bưởi, rượu bưởi cho đến chè bưởi.
+              </p>
+              <p>
+                Có một món vô cùng đặc biệt mà bạn không thể quên thưởng thức và
+                mua về làm quà. Đó chính là rượu bưởi Tân Triều. Rượu bưởi được
+                người dân chăm chút từng công đoạn, tạo nên hương vị khó quên.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-8.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn trái cây Long Khánh
+              </summary>
+              <p class="detail-content">
+                Khoảng thời gian tuyệt vời nhất mà bạn có thể thỏa sức thưởng
+                thức trái cây khi đến Long Khánh chính là từ tháng 7 đến tháng
+                8. Bạn sẽ được ngắm nhìn những khu vườn bạt ngàn các loại trái
+                cây nhiệt đới như chôm chôm, sầu riêng, duâ da, măng cụt…
+              </p>
+              <p>
+                Chỉ với 50.000 VND để mua vé vào cửa, bạn sẽ được thỏa thích
+                thưởng thức hết trải cây nơi đây. Nếu bạn có thời gian, tại sao
+                không cắm trại qua đêm tại đây, thong dong ngồi thảnh thơi câu
+                cá? Chắc hắn bạn nhớ mãi không quên khoảnh khắc đó.
+              </p>
+              <img
+                src="https://ik.imagekit.io/tvlk/blog/2022/03/dia-diem-du-lich-dong-nai-9.jpg?tr=q-70,c-at_max,w-1000,h-600"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đảo Ó
+              </summary>
+              <p class="detail-content">
+                Đảo Ó là một hòn đảo nhỏ nằm giữa lòng hồ Trị An, thuộc xã Mã
+                Đà, huyện Vĩnh Cửu, tỉnh Đồng Nai, cách trung tâm TP.HCM khoảng
+                70 km. Nơi đây được mệnh danh là “ốc đảo xanh” giữa rừng già và
+                hồ nước mênh mông, là điểm đến lý tưởng cho những ai yêu thiên
+                nhiên, thích khám phá và muốn tìm một nơi yên tĩnh để thư giãn
+                cuối tuần.
+              </p>
+              <p>
+                Để đến đảo Ó, du khách cần di chuyển bằng thuyền hoặc ca nô từ
+                bến thuyền xã Vĩnh An, mất khoảng 30 phút. Trên đảo, không khí
+                vô cùng trong lành, cây cối xanh mát quanh năm, tiếng chim hót
+                rộn ràng và mặt hồ phẳng lặng tạo nên một khung cảnh vừa hoang
+                sơ vừa thơ mộng. Du khách có thể cắm trại qua đêm, tổ chức
+                picnic, chèo thuyền kayak, câu cá, đạp xe quanh đảo hoặc đơn
+                giản là thư giãn, đọc sách dưới tán cây xanh.
+              </p>
+              <img
+                src="https://52hz.vn/wp-content/uploads/2021/07/52hz-dao-o.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin :
+                <a
+                  href="https://www.traveloka.com/vi-vn/explore/destination/dia-diem-du-lich-dong-nai/128425"
+                  target="_blank"
+                  >traveloka.com</a
+                >) (Nguồn hình ảnh:
+                <a href="https://52hz.vn/khu-du-lich-dao-o/">52hz.vn</a> )
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Trảng cỏ Bù Lạch
+              </summary>
+              <p class="detail-content">
+                Đây là trảng cỏ lớn rộng với diện tích khoảng 500ha bao gồm gần
+                20 trảng cỏ lớn nhỏ khác nhau. Đến với Trảng cỏ bù lạch du khách
+                sẽ phải trầm trồ, ngạc nhiên trước vẻ đẹp kì diệu mà tạo hóa ban
+                tặng. Đó là những bãi cỏ kim mọc đan xen với các loại hoa, càng
+                khiến cho khung cảnh nơi đây đẹp nên gấp vạn lần đầy sự mê hoặc
+                xung quanh còn có cả một rừng nguyên sinh bao bọc. Đứng nhìn
+                thôi đã thấy thích mắt lắm rồi, tới đây mọi người có thể xua tan
+                đi mọi muộn phiền, mệt mỏi mà cảm giác được thiên nhiên nơi đây
+                bao bọc. Một cảm giác thật là tuyệt vời. Có thể nói là trảng cỏ
+                bù lạch là điểm du lịch ở Bình Phước có bãi cỏ lớn nhất ở đây.
+                Trong thời gian sắp tới Trảng Cỏ Bù Lạch sẽ được quy hoạch thành
+                một khu du lịch sinh thái kết hợp với khung trường. Do đó bạn
+                hãy tranh thủ bớt chút thời gian ra để đến đây khám phá những vẻ
+                đẹp thiên nhiên nơi đây nhé.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/2-Trang-co-bu-lach-vntrip-1.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Sóc Bom Bo
+              </summary>
+              <p class="detail-content">
+                Sóc Bom Bo được rất nhiều người biết đến với bài hát nổi tiếng
+                Tiếng chày trên Sóc Bom Bo. Sóc Bom Bo với nhịp chày giã gạo của
+                người dân đồng bào S’Tieng đã đi vào thơ ca, vào lịch sử trong
+                lòng mỗi con người. Đến với nơi đây khách du lịch sẽ cảm nhận
+                hồi tưởng lại những năm tháng sôi động nơi đây những âm thanh
+                của tiếng cồng chiêng kết với với những tiếng chày giã gạo vang
+                lên trong ánh lửa hồng, uống rượu cần và thưởng thức những món
+                ăn nổi tiếng nơi đây. Chắc chắn sẽ đem lại cho các bạn những
+                giây phút thật khó quên những trải nghiệm cho một chuyến đi tham
+                quan của các bạn.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/Soc-BomBo-binh-phuoc-vntrip-2-e1534472682656.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn Quốc Gia Bù Gia Mập
+              </summary>
+              <p class="detail-content">
+                Vườn quốc gia bù gia nhập còn được gọi là một cánh rừng nguyên
+                sinh còn sót lại của tỉnh Bình Phước. Vườn quốc gia này cũng là
+                điểm du lịch hấp dẫn dành cho những ai thích khám phá những điều
+                mới lạ thiên nhiên hoang dã, cho những ai thích mạo hiểm. Ngoài
+                ra còn là nơi bảo tồn các loại cây na, quý hiếm, các nguồn gen
+                quý hiếm của hệ động vật, thực vật cùng với những giống cây
+                trồng trong danh sách đặc biệt của Việt Nam. Đây là một khu rừng
+                mang đậm nét hoang sơ, vô cùng giàu về tài nguyên đa dạng sinh
+                học cao. Bù Gia Nhập còn được gọi là khu di tích lịch sử trong
+                kháng chiến chống Mỹ. Địa danh này gắn liền với các trận đánh vô
+                cùng ác liệt ở miền Đông Nam Bộ.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/4-vuon-quoc-gia-Bu-Gia-Map-vntrip-e1534473232806.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Hồ Suối Lam
+              </summary>
+              <p class="detail-content">
+                Hồ Suối Lam, đây là nơi gặp gỡ của những dòng suối nhỏ tạo cho
+                mặt hồ trong xanh và thơ mộng một cách hữu tình, quanh hồ còn có
+                rất nhiều cây xanh quanh năm suốt tháng rợp bóng mát, in những
+                hàng cây thẳng tắp dưới mặt hồ. Hồ cách trung tâm tỉnh Bình
+                phước khoảng 10km. Bạn sẽ thật là ngỡ ngàng khi đến tham quan vẻ
+                đẹp nơi đây với một vẻ đẹp yên bình. Hồ Suối Lam đã trở thành
+                điểm đến tham quan thơ mộng và rất thu hút khách du lịch. Nhìn
+                từ xa, du khách có thể nhận thấy rằng Hồ Suối Lam có rất nhiều
+                nét giống với Hồ Xuân Hương ở Đà Lạt. Khung cảnh ở đây rất là
+                yên bình và hoang sơ thích hợp cho một buổi dã ngoại, cắm trại,
+                câu cá, thưởng thức những món ăn đặc sản núi rừng hấp dẫn ở nơi
+                đây. Đến với nơi đây để thưởng thức hết vẻ đẹp của nó thì có lẽ
+                khung cảnh buổi chiều nơi đây là thích thú nhất, lúc đó khung
+                cảnh hồ thật là yên ắng bình dị đẹp như một bức tranh thơ mộng.
+                Vào buổi sáng, sương bay trên mặt hồ nước phản chiếu tạo nên màu
+                xanh lam thật huyền ảo. Từ đó mà nó có tên là Hồ Suối Lam. Quanh
+                hồ còn có rất là nhiều loại hoa nở quanh năm, nó càng làm tôn
+                vinh thêm nét đẹp hoang sơ của hồ này. Có thể nói Hồ Suối Lam là
+                một trong những địa điểm du lịch Bình Phước hấp dẫn và thu hút
+                rất nhiều khách tham quan du lịch.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/5-ho-suoi-lam-vntrip-e1534473693182.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Núi Bà Rá – Thác Mơ
+              </summary>
+              <p class="detail-content">
+                Núi Bà Rá – Thác Mơ nằm ở hai phường Sơn Giang và Thác Mơ của
+                tỉnh Bình Phước cách TP HCM khoảng chừng 180km. Đây được gọi là
+                ngọn núi cao nhất của tỉnh Bình phước và cao thứ ba của vùng Nam
+                Bộ và đây là điểm đích của rất nhiều các phượt thủ và trekking.
+                Đứng ở bên trên ngọn núi khách tham quan có thể nhìn thấy các
+                huyện các vùng ở lân cận và hồ thủy điện Thác Mơ tuyệt đẹp vô
+                cùng về đêm. Hồ Thác Mơ ở giữa hồ còn có rất nhiều các hòn đảo
+                nhỏ, xung quanh hồ rợp bóng cây xanh, bốn mùa cây cối xanh tươi,
+                khung cảnh xung quanh còn khá là hoang sơ. Hồ Thác Mơ là nơi
+                cung cấp nước, điều tiết lũ cho cả vùng, tạo ra một môi trường
+                nuôi trồng thủy hải sản phục vụ cho đời sống của người dân nơi
+                đây. Hồ Thác Mơ kết hợp với núi Bà Rá đã tạo thành cụm điểm du
+                lịch bình phước trên núi, dưới hồ tạo nên một khung cảnh hữu
+                tình thơ mộng, hấp dẫn khách tham quan du lịch.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/8-nu-ba-ra-thac-mo-vntrip-e1534474111314.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Rừng cao su Bù Đăng
+              </summary>
+              <p class="detail-content">
+                Khi bạn đặt chân đến Bình Phước, đi đâu, chỗ nào bạn cũng sẽ
+                nhìn thấy những rừng cao su bạt ngàn, Thế nhưng ở Bù Đăng vẫn
+                được coi như là nơi trồng nhiều cao su nhất ở nơi đây. Cây cao
+                su ở đây được trồng xen giữa các khu rừng già và rừng non tạo
+                nên cả một dải đất dài như một bức tranh sơn dầu với đầy đủ các
+                gam màu như màu đỏ, màu vàng, xanh nhạt đến xanh đậm. Một bức
+                tranh đẹp hoàn mỹ. Vào thời gian rảnh rỗi, bạn có thể cùng bạn
+                bè, người thân đi picnic ở nơi đây ngồi trên các thảm cỏ lá khô,
+                dày êm, ngồi ngắm những chiếc lá vàng rụng vào cuối năm theo đó
+                là những cơn gió thổi xào xạc hệt như một thước phim đẹp tuyệt
+                ghi lại những bức ảnh đẹp, sống động đó.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/9-rung-cao-su-binh-phuoc-vntrip.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Vườn quốc gia Cát Tiên
+              </summary>
+              <p class="detail-content">
+                Vườn quốc gia Cát Tiên được gọi là khu dự trữ sinh quyển lớn
+                nhất thế giới và đồng thời nó cũng là một khu bảo tồn thiên
+                nhiên của Việt Nam ta. Ở đây có một hệ rừng sinh thái vô cùng đa
+                dạng và phong phú, đây cũng là nơi bảo tồn các loài động thực
+                vật quý hiếm. Tê giác rừng là động vật quý hiếm của Việt Nam và
+                cũng chỉ sinh sống ở nơi đây. Địa hình của khu vườn này là sự
+                kết hợp xen kẽ các thác ghềnh, đầm suối, các vùng ngập nước tạo
+                nên một khung cảnh tuyệt đẹp. Đến với Vườn quốc gia này là nơi
+                trú ngụ của hàng trăm các loài động vật hoang dã, rất nhiều động
+                vật quý hiếm nằm trong danh sách đỏ của Việt Nam. Đây còn là
+                thiên đường của các loài chim và có cả trạm cứu hộ gấu để khách
+                du lịch tham quan. Còn hơn thế sau mỗi đợt mưa rào, vẻ đẹp của
+                khu rừng này càng rực rỡ hơn bao giờ hết là có rất nhiều loại
+                bướm khác nhau hội tụ lại tạo nên một cánh rừng già sống động và
+                lãng mạn chả khác gì là phim huyền thoại cả. Đến đây các bạn sẽ
+                được chiêm ngưỡng vẻ đẹp muôn vàn sắc màu của mọi con bướm, từ
+                màu này đến màu khác, có cả loại bướm phượng quý hiếm nữa
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/11-vuon-quoc-gia-cat-tien-vntrip-e1534475040532.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác số 4
+              </summary>
+              <p class="detail-content">
+                Khác với các ngọn núi khác về hình dung các ngọn núi thác luôn
+                hùng vĩ với dòng nước tuôn ào ào từ trên đỉnh thác chảy xuống.
+                Thế nhưng thác số 4 này lại gần như chỉ là một cái ghềnh nho nhỏ
+                của một dòng suối chảy xuyên cái thị trấn này mà thôi. Con thác
+                này không cao, không đẹp, nước chảy không ồ ạt, dòng nước thì
+                không đỏ như màu đất bazan thế nhưng khi bạn đến đây sẽ không
+                bao giờ làm bạn thất vọng bởi vì nó là một rừng núi sông hồ
+                ngoại mục. Có một rừng cao su bạt ngàn mang đến cho không gian
+                thác thật thoáng mát, không khí trong lành, dễ chịu, và có cảm
+                giác lành lạnh. Ngoài ra du khách đến đây có thể nghỉ ngơi tại
+                các nhà nghỉ, dãy trọ rợp bóng nằm nghe thưởng thức những tiếng
+                chim hót ríu ro, tiếng gió khẽ thổi xào xạc và thưởng thức những
+                món ăn nổi tiếng đặc sản của nơi đây.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/14-thac-so-4-vntrip-e1534475475180.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Đứng
+              </summary>
+              <p class="detail-content">
+                Thác Đứng là một trong những con thác thuộc tỉnh Bình Phước.
+                Thác đứng được thiên nhiên tạo hóa ban tặng mang những nét kiến
+                tạo độc đáo đầy vẻ hoang sơ, và được mệnh danh là con thác đẹp
+                nhất của tỉnh Bình Phước. Con thác này thuộc thị xã Minh Hưng và
+                huyện Bù Đăng. Thác Đứng nằm ở giữa màu xanh bạt ngàn của rừng
+                cây và nương rẫy đứng khoảng mấy trăm mét du khách đã nghe thấy
+                những tiếng thác nước chảy. Tuy thác không cao lắm nhưng lại có
+                một dòng chảy nhanh, ồ ạt, mạnh mẽ ầm ầm đổ xuống những tảng đá
+                phía dưới, tung lớp bụi mù hơi nước.Dưới thác có muôn vàn tảng
+                đá lớn và hai bên bờ là những thảm cỏ, tán cây che rợp hai bên
+                đường tô điểm lên những chùm phong lan, hay những khóm hoa đang
+                thi nhau đua nở khoe sắc thắm… Không những thế những tảng đá này
+                còn được xếp nối tiếp nhau thành một đường đi cho khách có thể
+                qua lại bên bờ vào những ngày mưa nước chảy nhẹ.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/16-thac-dung-vntrip-e1534475699210.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu du lịch sinh thái Mỹ Lệ
+              </summary>
+              <p class="detail-content">
+                Từ xưa đến nay khi nhắc đến khu du lịch sinh thái mỹ lệ rất ít
+                người có thể nghĩ đây là một điểm du lịch rộng hơn 72ha với một
+                quần thể kiến trúc thiên nhiên hùng vĩ, với những núi rừng non,
+                sông nước đang được hình thành dần. Bạn đến đây bạn sẽ có một
+                cảm giác bạn như lạc vào trong một thung lũng khác biệt hẳn với
+                thế giới bên ngoài. Các luống trà màu xanh mướt mang lại cho
+                khách du lịch một cảm giác thư thái êm dịu rất khó tả. Những lối
+                đi hơi dốc, ngoằn nghèo, những con suối đá gập ghềnh giúp du
+                khách có cảm giác hơi mạo hiểm. Du khách có thể đi bộ hoặc ngồi
+                trên xe để tham quan toàn bộ trong khu sinh thái. Ngoài ra du
+                khách còn thư giãn bằng những thú vui như câu cá, hay tự bẻ
+                những quả chín trên cây để thưởng thức, có thể cắm trại ngoài
+                trời, để thưởng thức hương vị ở nơi đây. Tuy nhiên khu du lịch
+                sinh thái Mỹ Lệ sẽ trở thành một địa điểm du lịch ở bình phước
+                với tâm điểm thu hút khách du lịch với đầy đủ cơ sở hạ tầng, khu
+                nghỉ mát, khu resort, mang lại nhiều nét đặc trưng.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/17-khu-du-lich-sinh-thai-my-le-vntrip.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Voi
+              </summary>
+              <p class="detail-content">
+                Tại sao lại có cái tên thác như này? Bởi vì theo tương truyền
+                của nơi đây đã từng có trăm con voi đã đến đây để uống nước và
+                nô đùa. Vì quá nhiều con voi nên những cuộc chiến tranh tranh
+                chấp thường xuyên xảy ra để tranh giành lãnh địa. Qua nhiều năm
+                tranh chấp xương Voi nhiều chồng chất tạo nên những ngọn đồi
+                nhỏ. Thác Voi này thuộc huyện Bù Đăng của tỉnh Bình Phước. Đường
+                đến thác voi khá nhỏ, gập ghềnh, uốn lượn theo những ngọn đồi,
+                sườn núi đòi hỏi người lái xe phải là tay lái vững. Xung quanh
+                thác voi có nhiều tảng đá rộng, phẳng. Du khách có thể cảm thấy
+                mát lạnh khi ngồi trên những hòn đá. Vào mùa khô, dòng nước chảy
+                nhẹ sẽ tạo ra cảm giác lâng lâng mát rượi khó tả để thả hồn theo
+                vũ điệu núi rừng nơi đây.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/19-thac-voi-vntrip-e1534476234833.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Khu du lịch Sóc Xiêm
+              </summary>
+              <p class="detail-content">
+                Khu du lịch này là một trong những khu du lịch sinh thái của
+                Bình Phước hấp dẫn và đầy thú vị. Hồ Sóc Xiêm trữ tình nằm giữa
+                một thung lũng màu xanh yên ả, và một bên là khu dân cư. Đến nơi
+                đây du khách sẽ được câu cá bên hồ nước hay nằm nghe những tiếng
+                lá xào xạc, tiếng gió lao xao trên mặt nước khi nằm trên những
+                thảm lá. Hồ Sóc Xiêm là một cảnh đẹp nguyên sinh thơ mộng, ven
+                hồ rêu xanh dày đặc kín, nước trong tạo nên một phong cảnh hữu
+                tình, các loài cá là nguồn thủy hải sản của người dân sinh sống
+                nơi đây. Hồ Sóc Xiêm là tài sản vô cùng quý giá mà thiên nhiên
+                tạo hóa ban tặng cho người dân miền Đông Nam Bộ.
+              </p>
+              <img
+                src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2018/08/24-dl-soc-xiem-vntrip-e1534476700771.jpg"
+                class="w3-container"
+                alt=""
+              />
+              <p style="font-size: smaller">
+                (Nguồn thông tin và hình ảnh:
+                <a
+                  href="https://www.vntrip.vn/cam-nang/dia-diem-du-lich-binh-phuoc-83042"
+                  target="_blank"
+                  >vntrip.vn</a
+                >)
+              </p>
+            </details>
+          </li>
+        </ol>
+      </section>
+
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <strong><mark>1. Quy mô và vị trí địa lý</mark></strong
+            ><br />
+            - Diện tích <u>hơn 12.700 km²</u>, dân số
+            <u>trên 4,3 triệu người</u>.<br />
+            - Nằm ở vị trí chiến lược, kết nối ba vùng kinh tế trọng điểm: Đông
+            Nam Bộ, Tây Nguyên và duyên hải miền Trung.<br />
+            - Dự kiến trở thành trung tâm phát triển công nghiệp, dịch vụ,
+            logistics, nông nghiệp công nghệ cao và đầu mối liên kết vùng quan
+            trọng.
+          </p>
+
+          <p>
+            <strong><mark>2. Lợi thế không gian phát triển</mark></strong
+            ><br />
+            - Đồng Nai hiện là “thủ phủ công nghiệp” với
+            <u>gần 50 khu công nghiệp</u>, tỷ lệ lấp đầy cao nhưng quỹ đất hạn
+            chế.<br />
+            - Bình Phước rộng rãi, giàu tài nguyên, chi phí đầu tư cạnh tranh,
+            bổ sung không gian phát triển cho công nghiệp công nghệ cao, chế
+            biến sâu và dịch vụ hậu cần.<br />
+            - Quy hoạch vùng: Biên Hòa – Long Thành chuyên đô thị, thương mại,
+            công nghệ cao; Bình Phước tập trung nông nghiệp hiện đại và công
+            nghiệp phụ trợ.
+          </p>
+
+          <p>
+            <strong><mark>3. Logistics và hạ tầng</mark></strong
+            ><br />
+            - Cảng hàng không quốc tế Long Thành và mạng lưới cao tốc kết nối
+            các vùng giúp Đồng Nai trở thành “siêu trung tâm logistics” liên
+            vùng.<br />
+            - Hệ thống giao thông mới (đường Đồng Phú – Nhơn Trạch, cầu Mã Đà,
+            cao tốc Biên Hòa – Chơn Thành) tăng cường kết nối hai vùng và dòng
+            chảy kinh tế.
+          </p>
+
+          <p>
+            <strong><mark>4. Quản lý hành chính và chuyển đổi số</mark></strong
+            ><br />
+            - Sau sáp nhập, còn <u>95 đơn vị hành chính cấp xã</u>, tinh gọn bộ
+            máy, tiết kiệm chi phí, giảm tầng nấc trung gian.<br />
+            - Tạo điều kiện thuận lợi cho chuyển đổi số, xây dựng chính quyền
+            điện tử hiện đại.
+          </p>
+
+          <p>
+            <strong><mark>5. Nông nghiệp và công nghiệp hỗ trợ</mark></strong
+            ><br />
+            - Đồng Nai có kinh nghiệm, thị trường lớn, năng lực chế biến; Bình
+            Phước có đất đai và quy mô sản xuất lớn.<br />
+            - Hình thành các vùng nông nghiệp chuyên canh công nghệ cao, mô hình
+            tuần hoàn, thích ứng biến đổi khí hậu.<br />
+            - Phát triển công nghiệp phụ trợ, chế biến sâu, dịch vụ logistics.
+          </p>
+
+          <p>
+            <strong><mark>6. Thu hút đầu tư và phát triển vùng</mark></strong
+            ><br />
+            - Tạo hệ sinh thái đầu tư đa dạng: công nghiệp, nông nghiệp,
+            logistics, giáo dục, du lịch sinh thái.<br />
+            - Chính sách ưu đãi thông minh, bộ máy quản lý hiệu quả giúp nâng
+            cao sức cạnh tranh khu vực và quốc tế.
+          </p>
+
+          <p>
+            <strong
+              ><mark>7. An ninh, quốc phòng và hợp tác quốc tế</mark></strong
+            ><br />
+            - Bình Phước giáp biên giới Campuchia, có cửa khẩu Hoa Lư.<br />
+            - Sáp nhập giúp quản lý biên giới đồng bộ, tăng cường an ninh,
+            thương mại và hợp tác xuyên biên giới, ứng phó biến đổi khí hậu.
+          </p>
+
+          <p>
+            <strong><mark>8. Thách thức và cơ hội</mark></strong
+            ><br />
+            - Chênh lệch hạ tầng, giáo dục, y tế, môi trường sống.<br />
+            - Khác biệt văn hóa, phong tục giữa hai địa phương.<br />
+            - Với sự đồng thuận của nhân dân, chỉ đạo quyết liệt của chính quyền
+            và hỗ trợ từ Trung ương, những thách thức có thể trở thành cơ hội
+            đổi mới.
+          </p>
+
+          <p>
+            <strong><mark>Kết luận</mark></strong
+            ><br />
+            Sáp nhập Đồng Nai và Bình Phước tạo ra cơ hội xây dựng một
+            <strong>“Đồng Nai mới”</strong> với mô hình phát triển hiện đại, hài
+            hòa giữa công nghiệp – nông nghiệp, tăng trưởng – bảo tồn, hội nhập
+            – bản sắc. Tỉnh mới có tiềm năng trở thành
+            <strong>trụ cột kinh tế phía Nam</strong> và hình mẫu cho các tỉnh
+            sáp nhập thành công.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="https://nhandan.vn/dong-nai-moi-canh-cua-lon-cho-su-phat-trien-da-chieu-post888839.html"
+            target="_blank"
+            >nhandan.vn</a
+          >)
+        </p>
+      </section>
+
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("w3-hide");
+      }
+    </script>
+  </body>
+</html>
