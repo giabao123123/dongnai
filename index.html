@@ -6,28 +6,20 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <link rel="shortcut icon" href="./Logo/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./Logo/android-chrome-512x512.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/apple-touch-icon.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/favicon-32x32.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="Style.css" />
     <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+  <body class="w3-light-grey" id="hero">
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
@@ -37,25 +29,21 @@
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-    <section class="box w3-right neon-box2" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Đồng Nai!</p>
-    </section>
     <header class="w3-top">
-      <nav class="w3-bar w3-white w3-padding w3-card">
+      <nav
+        class="w3-bar w3-white w3-padding w3-card"
+        aria-label="Thanh điều hướng chính"
+      >
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Đồng Nai</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
-          ❮
+          &#10094;
         </button>
         <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
-          ❯
+          &#10095;
         </button>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -63,7 +51,6 @@
           <li><a href="#menu">ĐỊA LÝ</a></li>
           <li><a href="#khihau">KHÍ HẬU</a></li>
           <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
-          \
           <li>
             <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
           </li>
@@ -81,14 +68,11 @@
             >
           </li>
         </ul>
-        <aside
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
+        <nav
           class="w3-animate-left w3-hide-small neon-box"
+          aria-label="Menu cuộn desktop"
         >
-          <div class="menu-scroll">
+          <div class="menu-scroll" role="list">
             <a href="#about" class="w3-bar-item w3-button"
               >LỊCH SỬ HÌNH THÀNH</a
             >
@@ -118,10 +102,47 @@
               >TRÒ CHƠI</a
             >
           </div>
-        </aside>
+        </nav>
       </nav>
+      <aside
+        class="box w3-right neon-box2"
+        aria-label="Lời chào"
+      >
+        <p class="text">Chào mừng đến với tỉnh Đồng Nai!</p>
+      </aside>
     </header>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu tỉnh Đồng Nai">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://statics.vinpearl.com/dong-nai-vietnam-1_1693286505.jpg')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Đông Nam Bộ Việt Nam</p>
+          <h1 class="hero-vl-title">Đồng Nai</h1>
+          <p class="hero-vl-sub">
+            Vùng đất cửa ngõ miền Đông Nam Bộ — nơi dòng sông Đồng Nai
+            uốn lượn qua những khu công nghiệp năng động, rừng nguyên sinh
+            hùng vĩ và bề dày lịch sử ngàn năm của vùng đất đỏ bazan.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>12.737 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Hơn 4,4 triệu</span>
+              <small>Dân số</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>95</span>
+              <small>Xã, phường</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
           LỊCH SỬ HÌNH THÀNH
@@ -859,112 +880,112 @@
             {
               name: "Huyện Phú Riềng",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phu-rieng?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phu-rieng?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lộc Ninh",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/loc-ninh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/loc-ninh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Hớn Quản",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/hon-quan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/hon-quan?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Đồng Phú",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-phu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bù Gia Mập",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-gia-map?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-gia-map?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bù Đốp",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dop?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dop?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bù Đăng",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/bu-dang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Phước Long",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phuoc-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/phuoc-long?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Chơn Thành",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/chon-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/chon-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Bình Long",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/binh-long?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/binh-long?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Đồng Xoài",
               parent: "Tỉnh Bình Phước cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-xoai?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/binh-phuoc/dong-xoai?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Biên Hòa",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/bien-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/bien-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Long Khánh",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-khanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-khanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Phú",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/tan-phu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/tan-phu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Vĩnh Cửu",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/vinh-cuu?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/vinh-cuu?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Định Quán",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/dinh-quan?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/dinh-quan?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trảng Bom",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/trang-bom?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/trang-bom?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thống Nhất",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/thong-nhat?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/thong-nhat?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Cẩm Mỹ",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/cam-my?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/cam-my?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Long Thành",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-thanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/long-thanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Xuân Lộc",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/xuan-loc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/xuan-loc?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Nhơn Trạch",
               parent: "Tỉnh Đồng Nai cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/dong-nai/nhon-trach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/dong-nai/nhon-trach?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -2171,13 +2192,21 @@
                   data: [
                     267000, 285000, 305000, 330000, 360000, 380000, 400000,
                   ],
-                  backgroundColor: "#4CAF50",
+                  backgroundColor: "rgba(26, 107, 66, 0.82)",
+                  borderColor: "#0C3B22",
+                  borderWidth: 1.5,
+                  borderRadius: 5,
+                  borderSkipped: false,
                   yAxisID: "y",
                 },
                 {
                   label: "Tăng trưởng GRDP (%)",
                   data: [8.5, 8.2, 8.9, 8.7, 2.5, 4.0, 9.0],
-                  backgroundColor: "#FF9800",
+                  backgroundColor: "rgba(181, 131, 26, 0.82)",
+                  borderColor: "#8A640F",
+                  borderWidth: 1.5,
+                  borderRadius: 5,
+                  borderSkipped: false,
                   yAxisID: "y1",
                 },
               ],
@@ -2185,25 +2214,38 @@
             options: {
               responsive: true,
               plugins: {
-                legend: { position: "top" },
+                legend: {
+                  position: "top",
+                  labels: { color: "#3D2C10", font: { family: "Open Sans", weight: 600 } },
+                },
                 title: {
                   display: true,
                   text: "GRDP và Tăng trưởng kinh tế tỉnh Đồng Nai (2016–2022)",
+                  color: "#1F2B1F",
+                  font: { family: "Montserrat", weight: 700, size: 14 },
+                  padding: { bottom: 16 },
                 },
               },
               scales: {
                 y: {
                   beginAtZero: true,
                   position: "left",
-                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                  title: { display: true, text: "GRDP (tỷ đồng)", color: "#1A6B42" },
+                  ticks: { color: "#7A8A7A" },
+                  grid: { color: "rgba(210,221,210,0.6)" },
                 },
                 y1: {
                   beginAtZero: true,
                   position: "right",
                   grid: { drawOnChartArea: false },
-                  title: { display: true, text: "Tăng trưởng (%)" },
+                  title: { display: true, text: "Tăng trưởng (%)", color: "#B5831A" },
+                  ticks: { color: "#7A8A7A" },
                 },
-                x: { title: { display: true, text: "Năm" } },
+                x: {
+                  title: { display: true, text: "Năm", color: "#3D2C10" },
+                  ticks: { color: "#7A8A7A" },
+                  grid: { display: false },
+                },
               },
             },
           });
@@ -4033,9 +4075,20 @@
       </section>
       <hr />
     </main>
-    <footer class="w3-center w3-light-grey w3-padding-32">
+    <footer class="w3-center w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    <script>
+      
+      (function () {
+        var btn = document.querySelector('.scroll-top-button');
+        if (!btn) return;
+        window.addEventListener('scroll', function () {
+          btn.classList.toggle('show', window.scrollY > 300);
+        }, { passive: true });
+      })();
+    </script>
+    <script src="animations.js"></script>
   </body>
 </html>
 
